@@ -241,6 +241,8 @@ li {
     font-size: 120%;
     margin-bottom: 0.2em;
     margin-top: 0;
+    width: 155%; 
+
 }
 
 .date {
@@ -250,6 +252,8 @@ li {
     font-size: 100%;
     line-height: 1; 
     color: #fff;
+    width: 155%; 
+
 }
 
 .description { 
