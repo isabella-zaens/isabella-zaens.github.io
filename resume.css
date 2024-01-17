@@ -64,16 +64,27 @@ header a.projects {
 }
 
 h1 {
-    max-width: 750px;
+    max-width: 60%;
     margin: 18px auto;
     border-radius: 7px;
     font-size: 30px;
     line-height: 0.5;
-    transition: background-color 0.5s, color 0.5s;
+    transition: background-color 0.2s, color 0.2s;
     margin-top:40px;
 }
+
 p {
-    max-width: 750px;
+    max-width: 60%;
+    margin: 18px auto;
+    border-radius: 7px;
+    font-size: 15px;
+    line-height: 0.5;
+    transition: background-color 0.2s, color 0.2s;
+    margin-top:40px;
+}
+
+/* p {
+    max-width: 60%;
     font-family: 'Inter';
     margin: 20px auto;
     border-radius: 3px;
@@ -82,7 +93,7 @@ p {
     transition: background-color 0.5s, color 0.5s; 
     margin-top: 20px;
     margin-bottom: 30px;
-}
+} */
 
 
 h1.dark-mode {

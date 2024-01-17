@@ -116,7 +116,7 @@ li {
     margin-top: 0;
     transition: color 0.5s;
     /* width: 500px; */
-    width: 10000%;              
+    width: 100%;              
     font-family: 'DM Sans';
 }
 
@@ -136,6 +136,7 @@ li {
 .image-column img {
     width: 65%;
     object-fit: contain;
+    background-color: transparent; 
 }
 
 .contact-container {
