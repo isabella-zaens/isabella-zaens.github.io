@@ -116,7 +116,7 @@ li {
     margin-top: 0;
     transition: color 0.5s;
     /* width: 500px; */
-    width: 100%;              
+    max-width: 100%;              
     font-family: 'DM Sans';
 }
 
@@ -134,7 +134,7 @@ li {
 }
 
 .image-column img {
-    width: 65%;
+    max-width: 65%;
     object-fit: contain;
     background-color: transparent; 
 }
@@ -155,7 +155,7 @@ li {
     align-items: center;
     justify-content: center;
     height: 100%; 
-    width: 100%; 
+    max-width: 100%; 
     border: 2px solid white;
     background-color: black;
     border-radius: 20px;
@@ -257,7 +257,7 @@ li {
 
 .description { 
     font-size: 13px; 
-    width: 133%; 
+    max-width: 133%; 
     color: #8e9aaf; 
 }
 
