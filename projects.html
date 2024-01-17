@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isabella Zaens Portfolio</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap">
+
+    <link rel="stylesheet" href="projects.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="home-icon" onclick="goHome()">
+            <home>iz</home>
+        </div>
+        <a href="resume.html" class="resume">Resume</a>
+        <a href="projects.html" class="projects">Projects</a>
+          <button class="toggle-button" onclick="toggleMode()">
+            <i id="toggle-icon" class="fas fa-sun"></i>
+        </button>
+    </header>
+
+
+    <h1 class="dark-mode">Projects</h1>
+
+
+    <div class="rectangles-container">
+        <div class="rectangle">
+            <div class="textbox">
+                <h2>Portfolio Website</h2>
+                <p class="date-text">Fall 2023</p>
+                <p>A portfolio to present my projects. Developed with HTML, CSS, and JavaScript.</p>
+            </div>
+            <div class="image">
+                <img src="portfolio.png">
+            </div>
+        </div>
+
+        <div class="rectangle">
+            <div class="textbox">
+                <h2>Plagiarism Catcher</h2>
+                <p class="date-text">Summer 2023</p>
+                <p>A plagiarism detection algorithm in C++ that uses hashtable, map, and vector containers.
+                    Efficiently handles large files. Tested and executed successfully on Linux.
+                </p>
+            </div>
+            <div class="image">
+                <img src="detector.png" alt="Image 2">
+            </div>
+        </div>
+
+        <div class="rectangle">
+            <div class="textbox">
+                <h2>Go Fish Simulator</h2>
+                <p class="date-text">Summer 2023</p>
+                <p>Features realistic shuffling, asking, and randomized dealing C++ algorithms.
+                    Tested and executed successfully on Linux.</p>
+            </div>
+            <div class="image">
+                <img src="cards.png" alt="Image 3">
+            </div>
+        </div>
+
+        <div class="rectangle">
+            <div class="textbox">
+                <h2>Two-Player Space Invaders</h2>
+                <p class="date-text">Spring 2023</p>
+                <p>Embedded Systems project in C++ using the Keil IDE for Arm's TM4C microcontroller. Designed a custom
+                    PCB, executed analog sampling,
+                    implemented interrupts, and showcased graphics on ST7735 LCD display.
+                </p>
+            </div>
+            <div class="image">
+                <img src="RenderedImage.jpg" alt="Image 3">
+            </div>
+        </div>
+
+        <div class="rectangle">
+            <div class="textbox">
+                <h2>Texas Battlebots League</h2>
+                <p class="date-text">Spring 2023</p>
+                <p>Collaboratively built a full-body spinner destructive robot for combat competition. Designed and
+                    wired electrical system.
+                    Used Arduino to interface control system.
+                </p>
+            </div>
+            <div class="image">
+                <img src="battlebots2.png">
+            </div>
+        </div>
+
+        <div class="rectangle">
+            <div class="textbox">
+                <h2>Solar Panel Inverter</h2>
+                <p class="date-text">Fall 2022</p>
+                <p>Designed a PCB that takes input from a solar panel to power a DC motor. Integrated components such as DACs, a
+                    current sense amplifier,voltage-controlled PWM generator, and a motor driver. Used a power tracking algorithm.</p>
+            </div>
+            <div class="image">
+                <img src="SolarPanelInverter.jpg">
+            </div>
+        </div>
+
+    </div>
+
+    <script src="projects.js"></script>
+
+</body>
+
+</html>

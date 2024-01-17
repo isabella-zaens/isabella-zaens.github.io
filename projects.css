@@ -1,0 +1,170 @@
+body {
+    font-family: 'Inter';
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #fff;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+header {
+    background-color: #000;
+    text-align: right;
+    padding: 1em;
+    transition: background-color 0.5s;
+    display: flex;
+    align-items: center;
+}
+
+.home-icon {
+    cursor: pointer;
+    margin-right: auto;
+    font-size: 25px;
+    margin-top: 0px;
+    font-family: 'Press Start 2P';
+}
+
+.home-icon:hover{
+    color: #724cf9;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 16px;
+    font-weight: normal;
+    transition: color 0.5s;
+}
+
+header a.resume,
+header a.projects {
+    font-size: 17px;
+    font-family: 'Inter';
+}
+
+.toggle-button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.toggle-button img {
+    width: 30px;
+    height: auto;
+}
+
+h1 {
+    max-width: 750px;
+    margin: 18px auto;
+    background-color: #000;
+    border-radius: 7px;
+    font-size: 30px;
+    line-height: 0.5;
+    transition: background-color 0.5s, color 0.5s;
+    margin-top:40px;
+}
+
+h1.dark-mode {
+    color: #fff;
+}
+
+h2 {
+    line-height: 0;
+    font-size: 20px; 
+}
+
+p{ 
+    font-size: 15px; 
+    font-family: 'Inter';
+}
+
+.rectangles-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+.rectangle {
+    display: flex;
+    margin: 10px;
+    background-color: #000;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    height: 10%; 
+    max-width: 65%;
+    border: 2px solid #fff;
+    transition: transform 0.2s ease, color 0.5s, border-color 0.5s;
+    /* Reduced scaling duration */
+}
+
+.rectangle:hover {
+    transform: scale(1.01);
+    color: #000;
+    /* Change text color on hover */
+    /* border-color: #000;  */
+}
+
+.rectangle.dark-mode {
+    background-color: #fff;
+    border: 2px solid #000;
+    color: #000;
+}
+
+.rectangle img {
+    width: 100%;
+    height: 100%;
+    /* Set the height to 100% to fill the container */
+    object-fit: cover;
+    /* Maintain aspect ratio and cover the container */
+    border-radius: 0 15px 15px 0;
+}
+
+.textbox {
+    flex: 2;
+    padding: 20px;
+    color: #fff;
+    line-height: 1.5;
+    /* Adjusted line-height */
+    transition: color 0.5s;
+}
+
+.textbox p {
+    margin: 0;
+    /* Remove margin for paragraph elements */
+    margin-bottom: 10px;
+    /* Add margin-bottom for spacing between paragraphs */
+}
+
+.textbox.dark-mode {
+    color: #000;
+}
+
+.image {
+    flex: 1;
+    overflow: hidden;
+}
+
+.date-text {
+    color: #ccc;
+    font-size: 15px;
+    color: #8e9aaf;
+    margin-top: 3px;
+    /* Adjusted margin-top */
+    transition: color 0.5s;
+    /* Added transition property */
+}
+
+.rectangle:hover h2,
+.rectangle .image:hover h2 {
+    color: #724cf9;
+    /* Change h2 color on hover */
+}
+
+.fas.fa-sun {
+    color: white; 
+}

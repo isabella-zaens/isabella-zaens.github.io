@@ -1,0 +1,99 @@
+body {
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    font-family: 'Inter';
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #fff;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+header {
+    background-color: #000;
+    text-align: right;
+    padding: 1em;
+    transition: background-color 0.5s;
+    display: flex;
+    align-items: center;
+}
+
+.home-icon {
+    cursor: pointer;
+    margin-right: auto;
+    font-size: 25px;
+    margin-top: 0px;
+    font-family: 'Press Start 2P';
+}
+
+.home-icon:hover{
+    color: #724cf9;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+    font-weight: normal;
+    transition: color 0.5s;
+}
+
+header a.resume,
+header a.projects {
+    font-size: 17px;
+    font-family: 'Inter';
+}
+
+.toggle-button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.toggle-button img {
+    width: 30px;
+    height: auto;
+}
+
+#pdf-container {
+    width: 60%;
+    margin: 20px auto;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+h1 {
+    max-width: 750px;
+    margin: 18px auto;
+    border-radius: 7px;
+    font-size: 30px;
+    line-height: 0.5;
+    transition: background-color 0.5s, color 0.5s;
+    margin-top:40px;
+}
+p {
+    max-width: 750px;
+    font-family: 'Inter';
+    margin: 20px auto;
+    border-radius: 3px;
+    font-size: 13px;
+    line-height: 0.5;
+    transition: background-color 0.5s, color 0.5s; 
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+
+h1.dark-mode {
+    color: #fff;
+}
+
+.home-icon {
+    cursor: pointer;
+    margin-right: auto;
+}
+
+.fas.fa-sun {
+    color: white; 
+}

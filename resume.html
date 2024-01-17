@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isabella Zaens Portfolio</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap">
+
+    <link rel="stylesheet" href="resume.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+</head>
+<body>
+    <header>
+        <div class="home-icon" onclick="goHome()">
+            <home>iz</home>
+        </div>
+        <a href="resume.html" class="resume">Resume</a>
+        <a href="projects.html" class="projects">Projects</a>
+          <button class="toggle-button" onclick="toggleMode()">
+            <i id="toggle-icon" class="fas fa-sun"></i>
+        </button>
+    </header>
+    <h1>Resume</h1>
+    <p>Thanks for stopping by! Feel free to download my resume.</p>
+    <div id="pdf-container">     
+        <iframe src="https://drive.google.com/file/d/1bP33EZRlGpO5e_c5zStHbpJ8qj56hY0w/preview" width="100%" height="1020px" style="border: none;"></iframe>
+    </div>
+
+    <script src="resume.js"></script>
+</body>
+</html>

@@ -1,0 +1,266 @@
+body {
+    font-family: 'Inter';
+    padding: 0;
+    background-color: #000;
+    color: #fff;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+header {
+    background-color: #000;
+    text-align: right;
+    padding: 1em;
+    transition: background-color 0.5s;
+    display: flex;
+    align-items: center;
+}
+
+.home-icon {
+    cursor: pointer;
+    margin-right: auto;
+    font-size: 25px;
+    margin-top: 0px;
+    font-family: 'Press Start 2P';
+}
+
+.home-icon:hover{
+    color: #724cf9;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+    font-weight: normal;
+    transition: color 0.5s;
+}
+
+header a.resume,
+header a.projects {
+    font-size: 17px;
+    font-family: 'Inter';
+}
+
+.toggle-button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.toggle-button img {
+    width: 30px;
+    height: auto;
+}
+
+section {
+    max-width: 70%;
+    margin: 20px auto;
+    padding: 2px;
+    background-color: #000;
+    border-radius: 8px;
+    font-size: 18px;
+    line-height: 1.3;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+section.dark-mode {
+    background-color: #fff;
+    color: #000;
+}
+h2 {
+    margin: 0px; 
+}
+
+p {
+    line-height: 1.6;
+    color: #fff;
+    margin: 0;
+    font-size: 15px;
+    transition: color 0.5s;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+.two-column-section {
+    display: flex;
+    max-width: 70%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #000;
+    border-radius: 8px;
+    margin-top: 50px;
+    margin-bottom: 50px; 
+}
+
+.text-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* padding-right: 20px; */
+}
+
+.text-column h1 {
+    color: #724cf9;
+    font-size: 60px;
+    margin-bottom: 0.2em;
+    margin-top: 0;
+    transition: color 0.5s;
+    /* width: 500px; */
+    width: 10000%;              
+    font-family: 'DM Sans';
+}
+
+.text-column p {
+    line-height: 1.6;
+    color: #fff;
+    margin: 0;
+    transition: color 0.5s;
+    font-size: 16px;
+}
+
+.image-column {
+    flex: 1;
+    text-align: right;
+}
+
+.image-column img {
+    width: 65%;
+    object-fit: contain;
+}
+
+.contact-container {
+    display: flex;
+    max-width: 70%;
+    margin: auto; 
+    padding: 0px;
+}
+
+.contact-container a {
+    text-decoration: none; 
+}
+
+.curved-rectangle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%; 
+    width: 100%; 
+    border: 2px solid white;
+    background-color: black;
+    border-radius: 20px;
+    padding: 10px;
+    color: white;
+    margin: 7px;
+    margin-top: 0;
+    margin-bottom: 40px;
+}
+
+.curved-rectangle:hover {
+    transform: scale(1.01);
+}
+
+.contact-icon {
+    margin-right: 10px;
+    font-size: 20px; 
+}
+
+.contact-handle {
+    flex: 1;
+    background: none;
+    border: none;
+    color: white;
+    outline: none;
+    font-size: 15px; 
+}
+
+.contact-handle::placeholder {
+    color: white; 
+    font-family: 'Inter';
+}
+
+.timeline {
+    position: relative;
+    width: 50%;
+    margin: 0% 30% 0% 18%;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 5px;
+    width: 1px;
+    height: calc(100% - 20px);
+    background-color: #724cf9;
+}
+
+.entry {
+    position: relative;
+    margin-bottom: 8px;
+}
+
+.circle {
+    width: 10px;
+    height: 10px;
+    background-color: #724cf9;
+    border-radius: 50%;
+    position: absolute;
+    margin-top: 7px;
+}
+
+@keyframes pulsate {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.circle.pulsate {
+    animation: pulsate 1s ease-in-out infinite;
+}
+
+.content {
+    padding-left: 30px; 
+}
+
+.title {
+    color: #724cf9;
+    font-size: 18px;
+    margin-bottom: 0.2em;
+    margin-top: 0;
+}
+
+.date {
+    margin: 0;
+    margin-bottom: 4px;
+    padding: 0;
+    font-size: 14px;
+    line-height: 1; 
+    color: #fff;
+}
+
+.description { 
+    font-size: 13px; 
+    width: 133%; 
+    color: #8e9aaf; 
+}
+
+.fas.fa-sun {
+    color: white; 
+}
+
