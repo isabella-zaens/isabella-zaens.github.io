@@ -68,7 +68,7 @@ h1 {
     margin: 18px auto;
     border-radius: 7px;
     font-size: 30px;
-    line-height: 0.5;
+    line-height: 1.5;
     transition: background-color 0.2s, color 0.2s;
     margin-top:40px;
 }
