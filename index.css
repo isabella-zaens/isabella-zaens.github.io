@@ -27,6 +27,8 @@ header {
     color: #724cf9;
 }
 
+
+
 header a {
     color: #fff;
     text-decoration: none;
@@ -64,8 +66,15 @@ section.dark-mode {
     background-color: #fff;
     color: #000;
 }
+
 h2 {
     margin: 0px; 
+}
+
+h4 {
+    color: #724cf9;
+    font-size: 18px; 
+    line-height: 0;
 }
 
 p {
@@ -264,3 +273,4 @@ li {
 .fas.fa-sun {
     color: white; 
 }
+
