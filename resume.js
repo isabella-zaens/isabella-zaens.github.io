@@ -1,18 +1,3 @@
-import confetti from "https://esm.run/canvas-confetti@1";
-
-document.addEventListener("DOMContentLoaded", () => {
-  const downloadButton = document.getElementById("download-button");
-
-  if (downloadButton) {
-    downloadButton.addEventListener("click", () => {
-      confetti({
-        particleCount: 150,
-        spread: 60
-      });
-    });
-  }
-});
-
 function toggleMode() {
     const body = document.body;
     const header = document.querySelector('header');
