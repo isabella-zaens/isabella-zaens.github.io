@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Isabella Zaens Portfolio</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap">
-
     <link rel="stylesheet" href="projects.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
@@ -20,24 +20,60 @@
         </div>
         <a href="resume.html" class="resume">Resume</a>
         <a href="projects.html" class="projects">Projects</a>
-          <button class="toggle-button" onclick="toggleMode()">
+        <button class="toggle-button" onclick="toggleMode()">
             <i id="toggle-icon" class="fas fa-sun"></i>
         </button>
     </header>
 
-
     <h1 class="dark-mode">Projects</h1>
-
 
     <div class="rectangles-container">
         <div class="rectangle">
             <div class="textbox">
-                <h2>Portfolio Website</h2>
-                <p class="date-text">Fall 2023</p>
-                <p>A portfolio to present my projects. Developed with HTML, CSS, and JavaScript.</p>
+                <h2>ReNeu Robotics, Maestro Exoskeleton</h2>
+                <p class="date-text">Spring 2023-Present</p>
+                <ul>
+                    <li>Developed embedded software for an EMG-driven hand exoskeleton for spinal cord injury
+                        rehabilitation</li>
+                    <li>Optimized data acquisition system performance using C++, EtherCAT, ESI, and SOEM</li>
+                    <li>Created documentation and wiring diagrams for a new exoskeleton in collaboration with Sony</li>
+                    <li>Researching and integrating advanced hardware and software for a new version of the exoskeleton
+                    </li>
+                </ul>
+                <p>
+                    <a href="https://reneu.robotics.utexas.edu/" style="color: #9d83fb;" target="_blank">ReNeu
+                        Robotics</a> |
+                    <a href="https://reneu.robotics.utexas.edu/maestro-hand-exoskeleton-0" style="color: #9d83fb;"
+                        target="_blank">Maestro Hand Exoskeleton</a>
+
+                </p>
             </div>
             <div class="image">
-                <img src="images/projects_portfolio.png">
+                <img src="project_files/projects_reneu_exo.jpg"
+                    style="display: block; margin: 0 auto; height: 300px; width: 100%;">
+            </div>
+        </div>
+
+        <div class="rectangle">
+            <div class="textbox">
+                <h2>LC3-b Simulator</h2>
+                <p class="date-text">Spring 2023</p>
+                <ul>
+                    <li>Developed an LC-3b simulator with features like instruction execution, branching, virtual
+                        memory management, and interrupt and exception handling</li>
+                    <li>Implemented one-level page table translation scheme for virtual memory</li>
+                    <li>Added support for four types of exceptions: unaligned access, protection, page fault, and
+                        unknown opcode</li>
+                    <li>Modified existing datapath, state diagram, and microsequencer to support new features</li>
+                    <li>Conducted extensive testing and validation with various scenarios</li>
+                    <li>Utilized C and LC-3b programming languages, microcode, and a control store</li>
+                </ul>
+                <p>
+                    <a href="project_files/lc3b_simulator-main.zip" download style="color: #9d83fb;">lc3b_simulator.zip</a>
+                </p>
+            </div>
+            
+            <div class="image">
             </div>
         </div>
 
@@ -45,24 +81,19 @@
             <div class="textbox">
                 <h2>Plagiarism Catcher</h2>
                 <p class="date-text">Summer 2023</p>
-                <p>A plagiarism detection algorithm in C++ that uses hashtable, map, and vector containers.
-                    Efficiently handles large files. Tested and executed successfully on Linux.
+                <ul>
+                    <li>Designed and implemented a C++ algorithm for detecting plagiarism in text files</li>
+                    <li> Utilized data structures like hashtables, maps, and vectors for efficient text comparison and
+                        handling</li>
+                    <li> Optimized performance to handle large files effectively</li>
+                    <li>Successfully tested and deployed on Linux systems to ensure reliability and accuracy</li>
+                </ul>
+                <p>
+                    <a href="project_files/plagiarism_catcher.zip" download style="color: #9d83fb;">plagiarism_catcher.zip</a>
                 </p>
             </div>
             <div class="image">
-                <img src="images/projects_plagiarismcatcher.png" alt="Image 2">
-            </div>
-        </div>
-
-        <div class="rectangle">
-            <div class="textbox">
-                <h2>Go Fish Simulator</h2>
-                <p class="date-text">Summer 2023</p>
-                <p>Features realistic shuffling, asking, and randomized dealing C++ algorithms.
-                    Tested and executed successfully on Linux.</p>
-            </div>
-            <div class="image">
-                <img src="images/projects_cards.png" alt="Image 3">
+                <img src="project_files/projects_plagiarismcatcher.png" alt="Plagiarism Catcher">
             </div>
         </div>
 
@@ -70,13 +101,16 @@
             <div class="textbox">
                 <h2>Two-Player Space Invaders</h2>
                 <p class="date-text">Spring 2023</p>
-                <p>Embedded Systems project in C++ using the Keil IDE for Arm's TM4C microcontroller. Designed a custom
-                    PCB, executed analog sampling,
-                    implemented interrupts, and showcased graphics on ST7735 LCD display.
-                </p>
+                <ul>
+                    <li>Embedded Systems project in C++ using the Keil IDE for Arm's TM4C microcontroller</li>
+                    <li>Designed a custom PCB and executed analog sampling</li>
+                    <li>Implemented interrupts and showcased graphics on ST7735 LCD display</li>
+                    <li>Added UART communication capabilities for interaction with other TM4C microcontrollers,
+                        enhancing gameplay with cooperative or competitive features</li>
+                </ul>
             </div>
             <div class="image">
-                <img src="images/projects_spaceinvaders.jpg" alt="Image 3">
+                <img src="project_files/projects_spaceinvaders.jpg" alt="Space Invaders Project">
             </div>
         </div>
 
@@ -84,13 +118,15 @@
             <div class="textbox">
                 <h2>Texas Battlebots League</h2>
                 <p class="date-text">Spring 2023</p>
-                <p>Collaboratively built a full-body spinner destructive robot for combat competition. Designed and
-                    wired electrical system.
-                    Used Arduino to interface control system.
-                </p>
+                <ul>
+                    <li>Developed a full-body spinner robot for combat competition</li>
+                    <li>Designed and implemented the robot's electrical system using an Arduino Uno Rev3 microcontroller</li>
+                    <li>Integrated various control system elements, including ESC, RC controller, power supply, motors, and a remote kill switch</li>
+                    <li>Conducted extensive testing to ensure reliability and optimal performance in competitive matches</li>
+                </ul>
             </div>
             <div class="image">
-                <img src="images/projects_battlebots.png">
+                <img src="project_files/projects_battlebots.png" alt="Battlebots League">
             </div>
         </div>
 
@@ -98,11 +134,14 @@
             <div class="textbox">
                 <h2>Solar Panel Inverter</h2>
                 <p class="date-text">Fall 2022</p>
-                <p>Designed a PCB that takes input from a solar panel to power a DC motor. Integrated components such as DACs, a
-                    current sense amplifier,voltage-controlled PWM generator, and a motor driver. Used a power tracking algorithm.</p>
+                <ul>
+                    <li>Designed a Printed Circuit Board (PCB) to utilize a solar panel for driving a motor</li>
+                    <li>Incorporated components: 4-bit and 6-bit DACs, current sense amplifier, voltage controlled PWM generator, and half bridge motor driver</li>
+                    <li>Implemented control using a TM4C microcontroller, programmed with Code Composer Studio</li>
+                </ul>
             </div>
             <div class="image">
-                <img src="images/projects_solarinverter.jpg">
+                <img src="project_files/projects_solarinverter.jpg" alt="Solar Panel Inverter">
             </div>
         </div>
 

@@ -1,11 +1,14 @@
+/* General Body Styles */
 body {
     font-family: 'Inter';
     padding: 0;
     background-color: #000;
     color: #fff;
     transition: background-color 0.5s, color 0.5s;
+    line-height: 0; 
 }
 
+/* Header Styles */
 header {
     background-color: #000;
     text-align: right;
@@ -19,15 +22,12 @@ header {
     cursor: pointer;
     margin-right: auto;
     font-size: 25px;
-    margin-top: 0px;
     font-family: 'Press Start 2P';
 }
 
-.home-icon:hover{
+.home-icon:hover {
     color: #724cf9;
 }
-
-
 
 header a {
     color: #fff;
@@ -51,6 +51,7 @@ header a.projects {
     cursor: pointer;
 }
 
+/* Section Styles */
 section {
     max-width: 80%;
     margin: 20px auto;
@@ -67,8 +68,9 @@ section.dark-mode {
     color: #000;
 }
 
+/* Typography Styles */
 h2 {
-    margin: 0px; 
+    margin: 0;
 }
 
 h4 {
@@ -85,6 +87,7 @@ p {
     transition: color 0.5s;
 }
 
+/* List Styles */
 ul {
     list-style: none;
     padding: 0;
@@ -94,6 +97,7 @@ li {
     margin-bottom: 5px;
 }
 
+/* Two-Column Section Styles */
 .two-column-section {
     display: flex;
     max-width: 80%;
@@ -110,7 +114,6 @@ li {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* padding-right: 20px; */
 }
 
 .text-column h1 {
@@ -119,7 +122,6 @@ li {
     margin-bottom: 0.2em;
     margin-top: 0;
     transition: color 0.5s;
-    /* width: 500px; */
     max-width: 100%;              
     font-family: 'DM Sans';
 }
@@ -143,36 +145,16 @@ li {
     background-color: transparent; 
 }
 
+/* Contact Container Styles */
 .contact-container {
     display: flex;
     max-width: 70%;
     margin: auto; 
-    padding: 0px;
+    padding: 0;
 }
 
 .contact-container a {
     text-decoration: none; 
-}
-
-.curved-rectangle {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%; 
-    max-width: 100%; 
-    border: 2px solid white;
-    background-color: black;
-    border-radius: 20px;
-    padding: 2%;
-    color: white;
-    margin: 7px;
-    margin-top: 0;
-    margin-bottom: 40px;
-    margin-right: 1%;
-}
-
-.curved-rectangle:hover {
-    transform: scale(1.01);
 }
 
 .contact-icon {
@@ -194,10 +176,33 @@ li {
     font-family: 'Inter';
 }
 
+/* Curved Rectangle Styles */
+.curved-rectangle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%; 
+    max-width: 100%; 
+    border: 2px solid white;
+    background-color: black;
+    border-radius: 20px;
+    padding: 2%;
+    color: white;
+    margin: 7px;
+    margin-top: 0;
+    margin-bottom: 40px;
+    margin-right: 1%;
+}
+
+.curved-rectangle:hover {
+    transform: scale(1.01);
+}
+
+/* Timeline Styles */
 .timeline {
     position: relative;
     width: 50%;
-    margin: 0% 30% 0% 12%;
+    margin: 0 30% 0 12%;
 }
 
 .timeline::before {
@@ -210,12 +215,12 @@ li {
     background-color: #724cf9;
 }
 
-.entry {
+.timeline-entry {
     position: relative;
     margin-bottom: 8px;
 }
 
-.circle {
+.timeline-circle {
     width: 10px;
     height: 10px;
     background-color: #724cf9;
@@ -229,48 +234,48 @@ li {
         transform: scale(1);
     }
     50% {
-        transform: scale(1.2);
+        transform: scale(1.52);
     }
     100% {
         transform: scale(1);
     }
 }
 
-.circle.pulsate {
+.circle-pulsate {
     animation: pulsate 1s ease-in-out infinite;
 }
 
-.content {
+.timeline-content {
     padding-left: 30px; 
-    width:auto;
+    width: auto;
 }
 
-.title {
+.timeline-title {
     color: #724cf9;
     font-size: 120%;
     margin-bottom: 0.2em;
     margin-top: 0;
     width: 155%; 
-
+    line-height: 1.2;
 }
 
-.date {
+.timeline-date {
     margin: 0;
     margin-bottom: 4px;
     padding: 0;
     font-size: 100%;
-    line-height: 1; 
-    color: #fff;
+    line-height: 1.2; 
+    color: #8e9aaf !important; 
     width: 155%; 
 }
 
-.description { 
+.timeline-description { 
     font-size: 100%; 
+    color: #fff;
     width: 155%; 
-    color: #8e9aaf !important; 
+    line-height: 1.5;
 }
 
 .fas.fa-sun {
     color: white; 
 }
-
