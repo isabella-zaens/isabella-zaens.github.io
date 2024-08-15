@@ -7,6 +7,7 @@ function toggleMode() {
     const aElements = document.querySelectorAll('header a');
     const rectangles = document.querySelectorAll('.rectangle');
     const toggleIcon = document.getElementById('toggle-icon');
+    const ulElements = document.querySelectorAll('.textbox ul'); // Add this line
 
     const isDarkMode = body.classList.toggle('dark-mode');
 
@@ -31,6 +32,10 @@ function toggleMode() {
     rectangles.forEach(rectangle => {
         rectangle.style.backgroundColor = isDarkMode ? '#000' : '#fff';
         rectangle.style.borderColor = isDarkMode ? '#fff' : '#000';
+    });
+
+    ulElements.forEach(ul => { // Add this block
+        ul.style.color = isDarkMode ? '#fff' : '#000';
     });
 
     // Toggle between sun and moon icons

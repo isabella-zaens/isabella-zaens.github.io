@@ -1,3 +1,4 @@
+/* General body styling for light and dark modes */
 body {
     font-family: 'Inter';
     margin: 0;
@@ -7,6 +8,7 @@ body {
     transition: background-color 0.5s, color 0.5s;
 }
 
+/* Header styling */
 header {
     background-color: #000;
     text-align: right;
@@ -55,7 +57,7 @@ header a.projects {
     height: auto;
 }
 
-/* Header Styling */
+/* Header text styling */
 h1 {
     max-width: 65%;
     margin: 40px auto 1px auto;
@@ -70,7 +72,7 @@ h1.dark-mode {
     color: #fff;
 }
 
-/* Text Styling */
+/* Text styling */
 h2 {
     line-height: 0;
     font-size: 20px; 
@@ -88,14 +90,20 @@ p {
     transition: color 0.5s;
 }
 
-/* Project List Styling */
+/* Bullet points and list styling */
 .project-list {
-    font-size: 14px; /* Smaller font size for bullet points */
+    font-size: 14px;
     list-style-type: disc;
-    padding-left: 20px; /* Indentation for bullet points */
+    padding-left: 20px;
+    margin-left: 0;
 }
 
-/* Rectangle Container Styling */
+ul {
+    padding-left: 20px;
+    margin-left: 0;
+}
+
+/* Rectangle container styling */
 .rectangles-container {
     display: flex;
     flex-direction: column;
@@ -103,7 +111,7 @@ p {
     margin: 20px;
 }
 
-/* Rectangle Styling */
+/* Rectangle styling */
 .rectangle {
     display: flex;
     margin: 10px;
@@ -135,7 +143,7 @@ p {
     border-radius: 0 15px 15px 0;
 }
 
-/* Textbox Styling */
+/* Textbox styling */
 .textbox {
     flex: 2;
     padding: 15px;
@@ -159,19 +167,19 @@ p {
     color: #000;
 }
 
-/* Image Styling */
+/* Image styling */
 .image {
     flex: 1;
     overflow: hidden;
 }
 
-/* Hover Effects */
+/* Hover effects */
 .rectangle:hover h2,
 .rectangle .image:hover h2 {
     color: #724cf9;
 }
 
-/* Icon Styling */
+/* Icon styling */
 .fas.fa-sun {
     color: white;
 }
