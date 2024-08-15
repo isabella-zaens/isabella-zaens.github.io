@@ -29,6 +29,11 @@ function toggleMode() {
     toggleIcon.classList.toggle('fa-moon', !isDarkMode);
 }
 
-function goHome() {
-    window.location.href = "index.html";
-}
+// function goHome() {
+//     window.location.href = "index.html";
+// }
+
+window.goHome = function() {
+  window.location.href = "index.html";
+};
+
