@@ -146,11 +146,11 @@ ul {
 /* Textbox styling */
 .textbox {
     flex: 2;
-    padding: 15px;
+    padding: 14px;
     color: #fff;
-    line-height: 1.5;
+    line-height: 1.7;
     transition: color 0.5s;
-    font-size: 14px;
+    font-size: 15px;
 }
 
 .textbox p {
