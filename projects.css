@@ -123,6 +123,7 @@ ul {
     max-width: 65%;
     border: 2px solid #fff;
     transition: transform 0.2s ease, color 0.5s, border-color 0.5s;
+    align-items: flex-start; 
 }
 
 .rectangle:hover {
@@ -151,6 +152,7 @@ ul {
     line-height: 1.7;
     transition: color 0.5s;
     font-size: 15px;
+    overflow: hidden; 
 }
 
 .textbox p {
@@ -185,10 +187,6 @@ ul {
 }
 
 @media screen and (max-width: 480px) {
-    header {
-        flex-direction: column;
-        align-items: center;
-    }
 
     header a {
         margin: 10px 0;
