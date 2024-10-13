@@ -52,7 +52,7 @@ header a.projects {
     border-radius: 10px;
     margin: 20px auto;
     overflow: hidden;
-    width: 60%;
+    width: 90%;
 }
 
 h1 {
@@ -102,6 +102,24 @@ p {
 
 .button:active {
     transform: scale(1.1);
+}
+
+@media screen and (max-width: 768px) {
+    #pdf-container {
+        width: 90%; 
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .button-container .button {
+        font-size: 12px;
+    }
 }
 
 .fas.fa-sun {
