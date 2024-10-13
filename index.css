@@ -31,17 +31,17 @@ header {
 
 header a {
     color: #fff;
-    text-decoration: none;
-    margin: 0 15px;
     font-size: 18px;
     font-weight: normal;
+    margin: 0 15px;
+    text-decoration: none;
     transition: color 0.5s;
 }
 
 header a.resume,
 header a.projects {
-    font-size: 17px;
     font-family: 'Inter';
+    font-size: 17px;
 }
 
 .toggle-button {
