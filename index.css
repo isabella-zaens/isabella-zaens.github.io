@@ -149,8 +149,9 @@ li {
 /* Contact Container Styles */
 .contact-container {
     display: flex;
-    max-width: 70%;
-    margin: auto; 
+    flex-wrap: wrap; /* Ensures wrapping on smaller screens */
+    max-width: 90%;  /* Adjusts the container width for responsiveness */
+    margin: auto;
     padding: 0;
 }
 
@@ -183,7 +184,7 @@ li {
     align-items: center;
     justify-content: center;
     height: 100%; 
-    max-width: 100%; 
+    min-width: 100%; /* Ensures the width fits smaller screens */
     border: 2px solid white;
     background-color: black;
     border-radius: 20px;
@@ -198,6 +199,7 @@ li {
 .curved-rectangle:hover {
     transform: scale(1.01);
 }
+
 
 /* Timeline Styles */
 .timeline {
