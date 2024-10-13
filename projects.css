@@ -183,3 +183,40 @@ ul {
 .fas.fa-sun {
     color: white;
 }
+
+@media screen and (max-width: 480px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header a {
+        margin: 10px 0;
+        font-size: 12px;
+    }
+
+    h1 {
+        font-size: 22px;
+        max-width: 90%;
+    }
+
+    .rectangle {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .rectangle img {
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .textbox {
+        font-size: 12px;
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 16px;
+    }
+}
