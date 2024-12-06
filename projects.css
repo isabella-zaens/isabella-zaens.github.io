@@ -176,9 +176,13 @@ ul {
 }
 
 /* Hover effects */
-.rectangle:hover h2,
-.rectangle .image:hover h2 {
-    color: #724cf9;
+.rectangle:hover {
+    transform: scale(1.01);
+    border-color: #724cf9;  
+}
+
+.rectangle:hover h2 {
+    color: #724cf9;  
 }
 
 /* Icon styling */
