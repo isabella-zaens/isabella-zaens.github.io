@@ -146,61 +146,6 @@ li {
     background-color: transparent; 
 }
 
-/* Contact Container Styles */
-.contact-container {
-    display: flex;
-    flex-wrap: wrap; 
-    max-width: 90%;  
-    margin: auto;
-    padding: 0;
-}
-
-.contact-container a {
-    text-decoration: none; 
-}
-
-.contact-icon {
-    margin-right: 10px;
-    font-size: 120%; 
-}
-
-.contact-handle {
-    flex: 1;
-    background: none;
-    border: none;
-    color: white;
-    outline: none;
-    font-size: 100%; 
-}
-
-.contact-handle::placeholder {
-    color: white; 
-    font-family: 'Inter';
-}
-
-/* Curved Rectangle Styles */
-.curved-rectangle {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    max-width: 100%;
-    border: 2px solid white;
-    background-color: black;
-    border-radius: 20px;
-    padding: 2%;
-    color: white;
-    margin: 7px;
-    margin-top: 0;
-    margin-bottom: 40px;
-    margin-right: 1%;
-    flex-direction: row;
-}
-
-.curved-rectangle:hover {
-    transform: scale(1.01);
-}
-
 /* Media query for smaller screens */
 @media screen and (max-width: 768px) {
     .contact-container {
