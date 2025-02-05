@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isabella Zaens Portfolio</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="home-icon" onclick="goHome()">
+            <home>iz</home>
+        </div>
+        <a href="resume.html" class="resume">Resume</a>
+        <a href="projects.html" class="projects">Projects</a>
+        <!-- <button class="toggle-button" onclick="toggleMode()">
+            <i id="toggle-icon" class="fas fa-sun"></i>
+        </button> -->
+    </header>
+
+    <section class="two-column-section">
+        <section class="text-column">
+            <br>
+            <h1>Isabella Zaens</h1>
+            <p>Electrical and Computer Engineering Student</p>
+            <p>University of Texas at Austin</p>
+        </section>
+        <section class="image-column">
+            <img src="project_files/profile_image.png" alt="Profile Image">
+        </section>
+    </section>
+
+    <section>
+        <br>
+        <h2>About</h2>
+        <br>
+        <p>👋Hi! I'm Isabella, a third-year undergraduate studying Electrical and Computer Engineering at UT Austin</p>
+        <br>
+        <p> 📚 I have a strong background in computer architecture, analog and digital circuits, and software
+            development, and I am eager to apply my skills to tackle complex and meaningful challenges.
+        </p>
+        <br>
+        <p> 🤖 My technical interests lie in computer architecture, ASIC design, integrated circuits, and software
+            development. I’ve worked on projects ranging from developing embedded software for an EMG-driven hand
+            exoskeleton to designing a programmable stopwatch/timer on an FPGA and creating a cycle-level simulator for
+            the LC-3b microarchitecture.
+        </p>
+        <br>
+        <p> 🚀 I love tinkering, building new ideas, and enjoy collaborating with others who share this passion for
+            creating and experimenting. If you're interested in working together, feel free to reach out!
+        </p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <table class="skills-table">
+            <tr>
+                <td>
+                    <img src="skills_images/c.png" alt="C">
+                    <p>C</p>
+                </td>
+                <td>
+                    <img src="skills_images/c++.png" alt="C++">
+                    <p>C++</p>
+                </td>
+                <td>
+                    <img src="skills_images/python.png" alt="Python">
+                    <p>Python</p>
+                </td>
+                <td>
+                    <img src="skills_images/java.png" alt="Java">
+                    <p>Java</p>
+                </td>
+                <td>
+                    <img src="skills_images/html.png" alt="HTML">
+                    <p>HTML</p>
+                </td>
+                <td>
+                    <img src="skills_images/css.png" alt="CSS">
+                    <p>CSS</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="skills_images/linux.png" alt="Linux">
+                    <p>Linux</p>
+                </td>
+                <td>
+                    <img src="skills_images/git.png" alt="Git">
+                    <p>Git</p>
+                </td>
+
+                <td>
+                    <img src="skills_images/matlab.png" alt="Matlab">
+                    <p>MATLAB</p>
+                </td>
+                <td>
+                    <img src="skills_images/sql.png" alt="SQL">
+                    <p>SQL</p>
+                </td>
+                <td>
+                    <img src="skills_images/r.png" alt="R">
+                    <p>R</p>
+                </td>
+                <td>
+                    <img src="skills_images/js.png" alt="Javascript">
+                    <p>Javascript</p>
+                </td>
+            </tr>
+        </table>
+    </section>
+
+
+
+    <section>
+        <h2>Experience</h2>
+    </section>
+
+    <div class="timeline">
+        <div class="timeline-entry">
+            <div class="timeline-circle circle-pulsate"></div>
+            <div class="timeline-content">
+                <h3 class="timeline-title">Texas Instruments, Incoming Product Engineering Intern</h3>
+                <p class="timeline-date">May 2025 - Aug 2025</p>
+                <!-- <ul class="timeline-description">
+                    <li></li>
+                </ul> -->
+            </div>
+        </div>
+
+        <div class="timeline-entry">
+            <div class="timeline-circle circle"></div>
+            <div class="timeline-content">
+                <h3 class="timeline-title">WiSTEM Externship: AI and Semiconductors Program</h3>
+                <p class="timeline-date">January 2025</p>
+                <ul class="timeline-description">
+                    <li>Gained hands-on experience with IC design flows, semiconductor fundamentals, and Cadence EDA
+                        tools</li>
+                    <li>Completed modules on AI models, machine learning, and NLP using IBM Watson Studio</li>
+                    <li>Explored Moore's law, chip manufacturing processes, and AI integration in semiconductor systems
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="timeline-entry">
+            <div class="timeline-circle circle"></div>
+            <div class="timeline-content">
+                <h3 class="timeline-title">Advanced Micro Devices (AMD), Product Test Engineering Intern</h3>
+                <p class="timeline-date">May 2024 - Aug 2024</p>
+                <ul class="timeline-description">
+                    <li>Conducted system-level testing on next-generation Radeon GPUs, ensuring they met functionality
+                        and performance standards</li>
+                    <li>Debugged and characterized products to assess performance, process, and test sensitivities</li>
+                    <li>Performed yield analysis using industry-standard tools to support yield debug and failure
+                        analysis</li>
+                    <li>Developed scripts and tools in Python and Java to automate release notes generation and
+                        publication using Gradle and Atlassian Bamboo.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="timeline-entry">
+            <div class="timeline-circle circle"></div>
+            <div class="timeline-content">
+                <h3 class="timeline-title">ReNeu Robotics Lab, Undergraduate Research Assistant</h3>
+                <p class="timeline-date">Sep 2023 - Aug 2024</p>
+                <ul class="timeline-description">
+                    <li>Optimized the data acquisition system of a hand exoskeleton using C++, EtherCAT, ESI, SOEM, and
+                        DAQ</li>
+                    <li>Researched and integrated advanced hardware and software</li>
+                    <li>Created documentation and wiring diagrams</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="timeline-entry">
+            <div class="timeline-circle"></div>
+            <div class="timeline-content">
+                <h3 class="timeline-title">Texas Battlebots League, Electrical Engineer</h3>
+                <p class="timeline-date">Jan 2023 - Apr 2023</p>
+                <ul class="timeline-description">
+                    <li>Collaboratively designed and built a full-body spinner destructive robot for combat competition
+                    </li>
+                    <li>Used C and an Arduino Uno Rev3 microcontroller to interface the control system, including ESC,
+                        RC controller and transmitter, power supply, motors, and remote kill switch</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <section>
+        <h2>Relevant Coursework</h2>
+
+        <h4>Engineering</h4>
+        <table class="coursework-table">
+            <tr>
+                <td class="course-title">Computer Architecture</td>
+                <td class="course-code">ECE 460N</td>
+            </tr>
+            <tr>
+                <td class="course-title">Embedded Systems Honors</td>
+                <td class="course-code">ECE 319H</td>
+            </tr>
+            <tr>
+                <td class="course-title">Algorithms</td>
+                <td class="course-code">ECE 360C</td>
+            </tr>
+            <tr>
+                <td class="course-title">Software Design and Implementation I & II</td>
+                <td class="course-code">ECE 312H & 422C</td>
+            </tr>
+            <tr>
+                <td class="course-title">Circuit Theory Honors</td>
+                <td class="course-code">ECE 411H</td>
+            </tr>
+            <tr>
+                <td class="course-title">Digital Logic Design</td>
+                <td class="course-code">ECE 316</td>
+            </tr>
+
+            <tr>
+                <td class="course-title">Linear Systems and Signals</td>
+                <td class="course-code">ECE 313</td>
+            </tr>
+
+        </table>
+
+        <h4>Mathematics</h4>
+        <table class="coursework-table">
+            <tr>
+                <td class="course-title">Discrete Mathematics</td>
+                <td class="course-code">M 325K</td>
+            </tr>
+            <tr>
+                <td class="course-title">Linear Algebra</td>
+                <td class="course-code">M 340L</td>
+            </tr>
+            <tr>
+                <td class="course-title">Vector Calculus</td>
+                <td class="course-code">M 427L</td>
+            </tr>
+            <tr>
+                <td class="course-title">Probability and Random Processes Honors</td>
+                <td class="course-code">ECE 351H</td>
+            </tr>
+        </table>
+
+
+        <h4>Spring 2025</h4>
+        <table class="coursework-table">
+            <tr>
+                <td class="course-title">Embedded Systems Design Lab</td>
+                <td class="course-code">ECE 445L</td>
+            </tr>
+            <tr>
+                <td class="course-title">Data Science Lab</td>
+                <td class="course-code">ECE 460J</td>
+            </tr>
+            <tr>
+                <td class="course-title">Analog Circuits Lab</td>
+                <td class="course-code">ECE 438</td>
+            </tr>
+
+        </table>
+
+    </section>
+
+    <section>
+        <h2>Contact</h2>
+        <p>
+            <i class="fas fa-envelope"></i>
+            <span>isabella.zaens@utexas.edu</span>
+            <br>
+            <i class="fab fa-linkedin"></i>
+            <a href="https://linkedin.com/in/isabella-zaens/" target="_blank" rel="noopener noreferrer"
+                style="color: #724cf9; text-decoration: none;">
+                linkedin.com/in/isabella-zaens/
+            </a>
+        </p>
+    </section>
+
+
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>
