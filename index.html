@@ -19,8 +19,8 @@
         <h1>Isabella Zaens</h1>
         <p><strong>Electrical and Computer Engineering @ UT Austin</strong></p>
         <p class="purple-text">
-            <i class="fas fa-envelope"></i>
-            <span>isabella.zaens@utexas.edu</span>
+            <i class="fas fa-envelope" ></i>
+            <span class="linkedin-link">isabella.zaens@utexas.edu</span>
             <br>
             <i class="fab fa-linkedin"></i>
             <a href="https://linkedin.com/in/isabella-zaens/" target="_blank" class="linkedin-link">
@@ -32,15 +32,14 @@
 
     <div class="section" id="about">
         <h2>About</h2>
-        <p>👋 Hi! I'm Isabella, a third-year undergraduate studying Electrical and Computer Engineering at UT Austin.
+        <p>👋 Hi! I'm Isabella, a third-year undergraduate studying Electrical and Computer Engineering at the University of Texas at Austin.
         </p>
-        <p> 📚 I have a strong background in computer architecture, analog and digital circuits, and software
-            development, and I am eager to apply my skills to tackle complex and meaningful challenges.
-        </p>
-        <p> 🤖 My technical interests lie in computer architecture, ASIC design, integrated circuits, and software
-            development. I’ve worked on projects ranging from developing embedded software for an EMG-driven hand
-            exoskeleton to designing a programmable stopwatch/timer on an FPGA and creating a cycle-level simulator for
-            the LC-3b microarchitecture.
+        <p> 📚 I have a strong background in computer architecture, analog and digital circuits, embedded systems, and
+            software
+            development, and I am eager to apply my skills to tackle complex and meaningful challenges. 
+        <p>
+            🤖 I'm particularly interested in computer architecture and microarchitecture, VLSI, embedded system design,
+            hardware-software co-design, and integrated circuits.
         </p>
         <p>
             🚀 I love tinkering, building new ideas, and enjoy collaborating with others who share this passion for
@@ -102,6 +101,45 @@
             <div class="project">
                 <div class="project-content">
                     <div class="project-text">
+                        <h3>Cylindrical Volumetric Display</h3>
+                        <ul>
+                            <li>Developed a spinning addressable LED display with 36 pairs of DMA-driven NeoPixels
+                                mounted to a custom fan blade</li>
+                            <li>Enabled Wi-Fi communication between rotating and stationary units using TM4Cs and
+                                ESP8266 modules</li>
+                            <li>Designed power circuitry, custom PCBs, and CAD enclosures; fabricated enclosures using
+                                3D printing and laser cutting</li>
+
+                        </ul>
+                        <div class="tech-tags">
+                            <span>C</span>
+                            <span>Microcontroller</span>
+                            <span>Circuit Design</span>
+                            <span>PCB Design</span>
+                            <span>CAD</span>
+                        </div>
+                    </div>
+                    <div class="project-image" style="display: flex;">
+
+                        <div style="flex: 1; display: flex; flex-direction: column; height: 100%;">
+                            <img src="project_files/projects_volumetric1.jpg"
+                                style="width: 100%; height: 50%; object-fit: cover;" />
+                            <img src="project_files/project_volumetric2.jpg"
+                                style="width: 100%; height: 50%; object-fit: cover;" />
+                        </div>
+
+                        <div style="flex: 1; height: 100%;">
+                            <video style="width: 100%; height: 100%; object-fit: cover;" controls autoplay muted loop>
+                                <source src="project_files/project_volumetric.MOV" type="video/mp4">
+                            </video>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="project">
+                <div class="project-content">
+                    <div class="project-text">
                         <h3>LC-3b Microarchitecture Simulator</h3>
                         <ul>
                             <li>Developed a pipelined cycle-level simulator for the LC-3b microarchitecture using C and
@@ -127,269 +165,248 @@
             <div class="project">
                 <div class="project-content">
                     <div class="project-text">
-                        <h3>Two-Player Space Invaders</h3>
+                        <h3>Machine Learning Binary Classification Model</h3>
                         <ul>
-                            <li>Developed a two-player Space Invaders game on a TM4C microcontroller using C++ and ARM
-                                assembly</li>
-                            <li>Designed a custom game board PCB with analog joysticks, LEDs, switches, and an ST7735
-                                LCD using EAGLE</li>
-                            <li>Integrated interrupts for dynamic sound effects via DAC output</li>
+                            <li>Developed and optimized a LightGBM model for binary classification, using Optuna to
+                                refine hyperparameters</li>
+                            <li>Implemented cross-validation with StratifiedKFold to assess model stability, using ROC
+                                AUC as the performance metric</li>
+                            <li>Used parallel processing to accelerate model training, achieving 11th place out of 104
+                                in the Kaggle competition </li>
+
                         </ul>
                         <div class="tech-tags">
-                            <span>C++</span>
-                            <span>ARM Assembly</span>
-                            <span>PCB Design</span>
-                            <span>Microcontroller</span>
+                            <span>ML</span>
+                            <span>Python</span>
+                            <span>Hyperparameter Tuning</span>
+                            <span>Gradient Boosting</span>
                         </div>
                     </div>
-                    <div class="project-image">
-                        <img src="project_files/project_spaceinvaders_2.jpg" alt="Space Invaders">
+                    <div class="project-image" style="display: flex;">
+
+                        <div style="flex: 1; display: flex; flex-direction: column; height: 100%;">
+                            <img src="project_files/project_ml1.png"
+                                style="width: 100%; height: 50%; object-fit: cover;" />
+                            <img src="project_files/project_ml3.png"
+                                style="width: 100%; height: 50%; object-fit: cover;" />
+                        </div>
+
+                        <div style="flex: 1; height: 100%;">
+                            <img src="project_files/project_ml2.png"/> </div>
+
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="project">
-                <div class="project-content">
-                    <div class="project-text">
-                        <h3>FPGA Stopwatch/Timer</h3>
-                        <ul>
-                            <li>Designed a programmable stopwatch/timer on Basys3 FPGA with four counting modes using
-                                Verilog and RTL methodology</li>
-                            <li>Developed an HLSM and datapath architecture to optimize operation and efficiency</li>
-                            <li>Integrated 7-segment displays for time representation with 10 ms resolution</li>
-                            <li>Synthesized and simulated the design in Xilinx Vivado, ensuring full functionality with
-                                behavioral modeling and clock division techniques</li>
-                        </ul>
-                        <div class="tech-tags">
-                            <span>Verilog</span>
-                            <span>FPGA</span>
-                            <span>Hardware Design</span>
+                <div class="project">
+                    <div class="project-content">
+                        <div class="project-text">
+                            <h3>Two-Player Space Invaders</h3>
+                            <ul>
+                                <li>Developed a two-player Space Invaders game on a TM4C microcontroller using C++ and
+                                    ARM
+                                    assembly</li>
+                                <li>Designed a custom game board PCB with analog joysticks, LEDs, switches, and an
+                                    ST7735
+                                    LCD using EAGLE</li>
+                                <li>Integrated interrupts for dynamic sound effects via DAC output</li>
+                            </ul>
+                            <div class="tech-tags">
+                                <span>C++</span>
+                                <span>ARM Assembly</span>
+                                <span>PCB Design</span>
+                                <span>Microcontroller</span>
+                            </div>
                         </div>
-                    </div>
-                    <div class="project-image">
-                        <img src="project_files/projects_stopwatchjpg.jpg" alt="FPGA Stopwatch">
+                        <div class="project-image">
+                            <img src="project_files/project_spaceinvaders_2.jpg" alt="Space Invaders">
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="project">
-                <div class="project-content">
-                    <div class="project-text">
-                        <h3>Texas Battlebots League</h3>
-                        <ul>
-                            <li>Developed a full-body spinner robot for combat competition</li>
-                            <li>Designed the robot's electrical system using C and an Arduino Uno Rev3 microcontroller
-                            </li>
-                            <li>Integrated ESC, RC controller, power supply, motors,
-                                and remote kill switch</li>
-                            <li>Conducted testing to ensure reliability and performance in competitive matches
-                            </li>
-                        </ul>
-                        <div class="tech-tags">
-                            <span>C</span>
-                            <span>Robotics</span>
-                            <span>Microcontroller</span>
+
+                <div class="project">
+                    <div class="project-content">
+                        <div class="project-text">
+                            <h3>Texas Battlebots League</h3>
+                            <ul>
+                                <li>Developed a full-body spinner robot for combat competition</li>
+                                <li>Designed the robot's electrical system using C and an Arduino Uno Rev3
+                                    microcontroller
+                                </li>
+                                <li>Integrated ESC, RC controller, power supply, motors,
+                                    and remote kill switch</li>
+                                <li>Conducted testing to ensure reliability and performance in competitive matches
+                                </li>
+                            </ul>
+                            <div class="tech-tags">
+                                <span>C</span>
+                                <span>Robotics</span>
+                                <span>Microcontroller</span>
+                            </div>
                         </div>
-                    </div>
-                    <div class="project-image">
-                        <img src="project_files/projects_battlebots.png" alt="Texas Battlebots">
+                        <div class="project-image">
+                            <img src="project_files/projects_battlebots.png" alt="Texas Battlebots">
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <div class="section" id="experience">
-        <h2>Experience</h2>
-        <div class="timeline">
-            <div class="timeline-item">
-                <div class="timeline-dot dot-pulsate"></div>
-                <div class="timeline-content">
-                    <h3>Incoming Product Engineering Intern</h3>
-                    <p><i>Texas Instruments - Dallas, TX</i></p>
-                    <div class="job-date">Summer 2025</div>
+        <div class="section" id="experience">
+            <h2>Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot dot-pulsate"></div>
+                    <div class="timeline-content">
+                        <h3>Incoming Product Engineering Intern</h3>
+                        <p><i>Texas Instruments - Dallas, TX</i></p>
+                        <div class="job-date">Summer 2025</div>
+                    </div>
                 </div>
-            </div>
 
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-content">
-                    <h3>WiSTEM Externship: AI and Semiconductors Program</h3>
-                    <p><i>UT Austin - Austin, TX</i></p>
-                    <div class="job-date">January 2025</div>
-                    <ul>
-                        <li>Explored IC design flows, semiconductor fundamentals, and Cadence EDA
-                            tools</li>
-                        <li>Completed modules on AI models, machine learning, and NLP using IBM Watson Studio</li>
-                        <li>Explored Moore's law, chip manufacturing processes, and AI integration in semiconductor
-                            systems</li>
-                    </ul>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>WiSTEM Externship: AI and Semiconductors Program</h3>
+                        <p><i>UT Austin - Austin, TX</i></p>
+                        <div class="job-date">Dec 2025 - Jan 2025</div>
+                        <ul>
+                            <li>Explored IC design flows, semiconductor fundamentals, and Cadence EDA
+                                tools</li>
+                            <li>Completed modules on AI models, machine learning, and NLP using IBM Watson Studio</li>
+                            <li>Explored Moore's law, chip manufacturing processes, and AI integration in semiconductor
+                                systems</li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
 
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-content">
-                    <h3>GPU SLT Engineering Intern</h3>
-                    <p><i>AMD - Austin, TX</i></p>
-                    <div class="job-date">Summer 2024</div>
-                    <ul>
-                        <li>Conducted system-level testing on next-generation Radeon GPUs, ensuring functionality and
-                            performance standards</li>
-                        <li>Debugged and characterized products to assess performance, process, and test sensitivities
-                        </li>
-                        <li>Performed yield analysis using industry-standard tools to support yield debug and failure
-                            analysis</li>
-                        <li>Developed and automated scripts for release notes generation, reducing manual effort and
-                            streamlining publication</li>
-                    </ul>
-                </div>
-            </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>GPU System Validation Engineering Intern</h3>
+                        <p><i>AMD - Austin, TX</i></p>
+                        <div class="job-date">Summer 2024</div>
+                        <ul>
+                            <li>Performed system-level validation of Radeon GPUs on ATE-93K, executing production and
+                                characterization test flows</li>
+                            <li>Debugged silicon and characterized performance metrics and process variation across
+                                various
+                                test conditions</li>
+                            <li>Automated test flows and release notes generation using Bash, Python, Java, and Gradle,
+                                reducing manual workload</li>
+                            <li>Set up DUTs and independently ran system-level tests to support debug and accelerate
+                                validation timelines</li>
 
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-content">
-                    <h3>Undergraduate Research Assistant</h3>
-                    <p><i>ReNeu Robotics Lab, UT Austin - Austin, TX</i></p>
-                    <div class="job-date">Sep 2023 - Aug 2024</div>
-                    <ul>
-                        <li>Optimized the data acquisition system of a hand exoskeleton using C++, EtherCAT, ESI, SOEM,
-                            and DAQ</li>
-                        <li>Researched and integrated advanced hardware and software for the next iteration of the
-                            exoskeleton</li>
-                        <li>Created documentation, wiring diagrams, and tools to facilitate hardware integration</li>
-                    </ul>
+                        </ul>
+                    </div>
                 </div>
-            </div>
 
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-content">
-                    <h3>Google Data Analytics Professional Certificate</h3>
-                    <p><i>Coursera</i></p>
-                    <div class="job-date">May 2023</div>
-                    <ul>
-                        <li>Gained proficiency in key tools and platforms like SQL, Tableau, and R for data analysis and
-                            visualization</li>
-                        <li>Completed eight courses, including hands-on assessments, designed to prepare for entry-level
-                            data analytics roles</li>
-                        <li>
-                            <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/PL5VDV85PSZ2"
-                                target="_blank" class="linkedin-link">
-                                Certificate
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-content">
-                    <h3>IB Computer Science Internal Assessment</h3>
-                    <p><i>Electronics Inventory Manager</i></p>
-                    <div class="job-date">Jan 2021 - Mar 2021</div>
-                    <ul>
-                        <li>Consulted with an electronics manufacturing company and addressed inefficiencies in manual inventory tracking</li>
-                        <li>Developed Java-based solution to automate data collation and analysis from multiple distributors</li>
-                        <li>Implemented file parsing (.txt/.csv), data sorting (series, part number, quantity), and threshold-based reorder alerts</li>
-                        <li>Built interactive Java Swing GUI and integrated error handling, input validation, and backup functionality</li>
-                        <li>Maintained technical documentation and refined system via client feedback</li>
-                      </ul>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Undergraduate Research Assistant</h3>
+                        <p><i>ReNeu Robotics Lab, UT Austin - Austin, TX</i></p>
+                        <div class="job-date">Sep 2023 - Aug 2024</div>
+                        <ul>
+                            <li>Researched and developed embedded software for an EMG-driven hand exoskeleton to assist
+                                spinal cord injury patients
+                            <li>Optimized EMG data acquisition using C++, EtherCAT, ESI and SOEM, enabling real-time
+                                signal
+                                processing</li>
+                            <li>Integrated advanced hardware and software to improve exoskeleton performance based on
+                                research findings</li>
+                            <li>Created wiring diagrams and documentation for integration, delivered to Sony Japan for
+                                next-generation exoskeleton</li>
+
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <div class="section" id="coursework">
-        <h2>Relevant Coursework</h2>
-        <div class="coursework-container">
-            <div class="course-category">
-                <h3>Engineering</h3>
-                <table>
-                    <tr>
-                        <td>ECE<br>460N</td>
-                        <td>Computer Architecture</td>
-                    </tr>
-                    <tr>
-                        <td>ECE<br>319H</td>
-                        <td>Embedded Systems Honors</td>
-                    </tr>
-                    <tr>
-                        <td>ECE<br>360C</td>
-                        <td>Algorithms</td>
-                    </tr>
-                    <tr>
-                        <td>ECE<br>312H & 422C</td>
-                        <td>Software Design and Implementation I & II</td>
-                    </tr>
-                    <tr>
-                        <td>ECE<br>313</td>
-                        <td>Linear Systems and Signals</td>
-                    </tr>
-                    <tr>
-                        <td>ECE<br>411H</td>
-                        <td>Circuit Analysis & Theory Honors</td>
-                    </tr>
-                    <tr>
-                        <td>ECE<br>316</td>
-                        <td>Digital Logic Design</td>
-                    </tr>
+        <div class="section" id="coursework">
+            <h2>Relevant Coursework</h2>
+            <div class="coursework-container">
+                <div class="course-category">
+                    <h3>Engineering</h3>
+                    <table>
+                        <tr>
+                            <td>ECE<br>460N</td>
+                            <td>Computer Architecture</td>
+                        </tr>
+                        <tr>
+                            <td>ECE<br>445L</td>
+                            <td>Embedded Systems Design Lab</td>
+                        </tr>
+                        <tr>
+                            <td>ECE<br>360C</td>
+                            <td>Algorithms</td>
+                        </tr>
+                        <tr>
+                            <td>ECE<br>460J</td>
+                            <td>Data Science Lab</td>
+                        </tr>
+                        <tr>
+                            <td>ECE<br>313</td>
+                            <td>Linear Systems and Signals</td>
+                        </tr>
 
-                </table>
-            </div>
-            <div class="course-category">
-                <h3>Math</h3>
-                <table>
-                    <tr>
-                        <td>M<br>325K</td>
-                        <td>Discrete Math</td>
-                    </tr>
-                    <tr>
-                        <td>M<br>340L</td>
-                        <td>Linear Algebra</td>
-                    </tr>
-                    <tr>
-                        <td>M<br>427L</td>
-                        <td>Vector Calculus</td>
-                    </tr>
-                    <tr>
-                        <td>ECE<br>351H</td>
-                        <td>Probability and Statistics Honors</td>
-                    </tr>
-                </table>
-            </div>
-            <div class="course-category">
-                <h3>Spring 2025</h3>
-                <table>
-                    <tr>
-                        <td>ECE<br>445L</td>
-                        <td>Embedded Systems Design Lab</td>
-                    </tr>
-                    <tr>
-                        <td>ECE<br>460J</td>
-                        <td>Data Science Lab</td>
-                    </tr>
-                    <tr>
-                        <td>ECE<br>438</td>
-                        <td>Fundamentals of Microelectronics Lab</td>
-                    </tr>
-                </table>
+                    </table>
+                </div>
+                <div class="course-category">
+                    <h3>Math</h3>
+                    <table>
+                        <tr>
+                            <td>M<br>325K</td>
+                            <td>Discrete Math</td>
+                        </tr>
+                        <tr>
+                            <td>M<br>340L</td>
+                            <td>Linear Algebra</td>
+                        </tr>
+                        <tr>
+                            <td>M<br>427L</td>
+                            <td>Vector Calculus</td>
+                        </tr>
+                        <tr>
+                            <td>ECE<br>351H</td>
+                            <td>Probability and Statistics Honors</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="course-category">
+                    <h3>Fall 2025</h3>
+                    <table>
+                        <tr>
+                            <td>ECE<br>382M</td>
+                            <td>VLSI (graduate level)</td>
+                        </tr>
+                        <tr>
+                            <td>ECE<br>382N</td>
+                            <td>Tactile Sensing for Robotics (graduate level)</td>
+                        </tr>
+                        <tr>
+                            <td>ECE<br>364D</td>
+                            <td>Senior Design</td>
+                        </tr>
+                    </table>
+                </div>
             </div>
         </div>
-    </div>
 
 
 
 
-    <footer>
-        <p>Isabella Zaens</p>
-        <p><i class="fas fa-envelope"></i>
-            <span>isabella.zaens@utexas.edu</span>
-            <br>
-            <i class="fab fa-linkedin"></i>
-            <a href="https://linkedin.com/in/isabella-zaens/" target="_blank" class="linkedin-link">
-                linkedin.com/in/isabella-zaens/
-            </a>
-        </p>
-    </footer>
+        <footer>
+            <p>Isabella Zaens • 2025 </p>
+            <p><i class="fas fa-envelope"></i>
+                <span>isabella.zaens@utexas.edu</span>
+                <br>
+                <i class="fab fa-linkedin"></i>
+                <a href="https://linkedin.com/in/isabella-zaens/" target="_blank" class="linkedin-link">
+                    linkedin.com/in/isabella-zaens/
+                </a>
+            </p>
+        </footer>
 </body>
 
 </html>
