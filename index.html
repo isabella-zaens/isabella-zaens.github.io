@@ -4,23 +4,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="favicon.png">
+    <!-- <link rel="icon" href="favicon.png"> -->
     <title>Isabella Zaens</title>
     <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jersey+10&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
     <link rel="stylesheet" href="index.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
-    <!-- <a class="name-card" href="#">Isabella Zaens</a> -->
-    <div class="section"></div>
     <div class="section">
         <h1>Isabella Zaens</h1>
-        <p><strong>Electrical and Computer Engineering @ UT Austin</strong></p>
+        <p style="font-size: 17px;"><strong>Electrical and Computer Engineering @ UT Austin</strong></p>
         <p class="purple-text">
-            <i class="fas fa-envelope" ></i>
+            <i class="fas fa-envelope"></i>
             <span class="linkedin-link">isabella.zaens@utexas.edu</span>
             <br>
             <i class="fab fa-linkedin"></i>
@@ -33,19 +33,13 @@
 
     <div class="section" id="about">
         <h2>About</h2>
-        <p>👋 Hi! I'm Isabella, a third-year undergraduate studying Electrical and Computer Engineering at the University of Texas at Austin.
-        </p>
-        <p> 📚 I have a strong background in computer architecture, analog and digital circuits, embedded systems, and
-            software
-            development, and I am eager to apply my skills to tackle complex and meaningful challenges. 
-        <p>
-            🤖 I'm particularly interested in computer architecture, VLSI, embedded system design,
-            hardware-software co-design, and integrated circuits.
-        </p>
-        <p>
-            🚀 I love tinkering, building new ideas, and enjoy collaborating with others who share this passion for
-            creating and experimenting. If you're interested in working together, feel free to reach out!
-        </p>
+        <p>👋 Hi! I'm Isabella, a fourth-year Electrical and Computer Engineering student at the University of Texas at
+            Austin</p>
+        <p>📚 I have a strong foundation in computer architecture, circuits, embedded systems, and software development,
+            and I'm eager to apply my skills to real-world challenges. </p>
+        <p>🤖 My interests include computer architecture, VLSI, embedded systems, and integrated circuits.</p>
+        <p>🚀 I enjoy tinkering, building new ideas, and collaborating on creating ideas. If you're interested in
+            working together, feel free to reach out!</p>
         <p>View my <a href="Isabella Nicole Zaens Resume.pdf" class="highlight"
                 target="_blank"><strong>resume</strong></a>.</p>
     </div>
@@ -143,9 +137,9 @@
                     <div class="project-text">
                         <h3>LC-3b Microarchitecture Simulator</h3>
                         <ul>
-                            <li>Developed a pipelined cycle-level simulator for the LC-3b microarchitecture using C and
+                            <li>Cycle-level simulator for the LC-3b microarchitecture using C and
                                 LC-3b assembly</li>
-                            <li>Implemented virtual memory management with a one-level page table and page fault
+                            <li>Implemented virtual memory management with page table and page fault
                                 handling</li>
                             <li>Added support for unaligned access, protection, page fault, and unknown opcode
                                 exceptions</li>
@@ -193,37 +187,39 @@
                         </div>
 
                         <div style="flex: 1; height: 100%;">
-                            <img src="project_files/project_ml2.png"/> </div>
-
+                            <img src="project_files/project_ml2.png" />
                         </div>
+
                     </div>
                 </div>
-                <div class="project">
-                    <div class="project-content">
-                        <div class="project-text">
-                            <h3>Two-Player Space Invaders</h3>
-                            <ul>
-                                <li>Developed a two-player Space Invaders game on a TM4C microcontroller using C++ and
-                                    ARM
-                                    assembly</li>
-                                <li>Designed a custom game board PCB with analog joysticks, LEDs, switches, and an
-                                    ST7735
-                                    LCD using EAGLE</li>
-                                <li>Integrated interrupts for dynamic sound effects via DAC output</li>
-                            </ul>
-                            <div class="tech-tags">
-                                <span>C++</span>
-                                <span>ARM Assembly</span>
-                                <span>PCB Design</span>
-                                <span>Microcontroller</span>
-                            </div>
-                        </div>
-                        <div class="project-image">
-                            <img src="project_files/project_spaceinvaders_2.jpg" alt="Space Invaders">
+            </div>
+            <div class="project">
+                <div class="project-content">
+                    <div class="project-text">
+                        <h3>Two-Player Space Invaders</h3>
+                        <ul>
+                            <li>Developed a two-player Space Invaders game on a TM4C microcontroller using C++ and
+                                ARM
+                                assembly</li>
+                            <li>Designed a custom game board PCB with analog joysticks, LEDs, switches, and an
+                                ST7735
+                                LCD using EAGLE</li>
+                            <li>Integrated interrupts for dynamic sound effects via DAC output</li>
+                        </ul>
+                        <div class="tech-tags">
+                            <span>C++</span>
+                            <span>ARM Assembly</span>
+                            <span>PCB Design</span>
+                            <span>Microcontroller</span>
                         </div>
                     </div>
+                    <div class="project-image">
+                        <img src="project_files/project_spaceinvaders_2.jpg" alt="Space Invaders">
+                    </div>
                 </div>
+            </div>
 
+            <div id="more-projects" class="expandable">
                 <div class="project">
                     <div class="project-content">
                         <div class="project-text">
@@ -249,165 +245,171 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
+                <div class="project">
+                    <div class="project-content">
+                        <div class="project-text">
+                            <h3>ASCII Art Converter - Image and Video</h3>
+                            <ul>
+                                <li>Allows users to upload images and generate ASCII art with colors</li>
+                                <li>
+                                    Try the converter
+                                    <a href="ascii-generator.html" style="color: #737373; text-decoration: none;"
+                                        onmouseover="this.style.color='#6ca0ee';"
+                                        onmouseout="this.style.color='#737373';">
+                                        <i class="fas fa-link" style="color: inherit;"></i> here
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="tech-tags">
+                                <span>JavaScript</span>
+                                <span>HTML</span>
+                                <span>CSS</span>
+                            </div>
+                        </div>
+                         <div class="project-image" style="display: flex;">
 
-        <div class="section" id="experience">
-            <h2>Experience</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-dot dot-pulsate"></div>
-                    <div class="timeline-content">
-                        <h3>Incoming Product Engineering Intern</h3>
-                        <p><i>Texas Instruments - Dallas, TX</i></p>
-                        <div class="job-date">Summer 2025</div>
+                        <div style="flex: 1; display: flex; flex-direction: column; height: 100%;">
+                            <img src="project_files/project_ascii3.jpg"
+                                style="width: 100%; height: 50%; object-fit: cover;" />
+                            <img src="project_files/project_ascii1.png"
+                                style="width: 100%; height: 50%; object-fit: cover;" />
+                        </div>
+
+                        <div style="flex: 1; height: 100%;">
+                            <video style="width: 100%; height: 100%; object-fit: cover;" controls autoplay muted loop>
+                                <source src="project_files/project_ascii2.mp4" type="video/mp4">
+                            </video>
+                        </div>
+
                     </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <h3>WiSTEM Externship: AI and Semiconductors Program</h3>
-                        <p><i>UT Austin - Austin, TX</i></p>
-                        <div class="job-date">Dec 2025 - Jan 2025</div>
-                        <ul>
-                            <li>Explored IC design flows, semiconductor fundamentals, and Cadence EDA
-                                tools</li>
-                            <li>Completed modules on AI models, machine learning, and NLP using IBM Watson Studio</li>
-                            <li>Explored Moore's law, chip manufacturing processes, and AI integration in semiconductor
-                                systems</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <h3>GPU System Validation Engineering Intern</h3>
-                        <p><i>AMD - Austin, TX</i></p>
-                        <div class="job-date">Summer 2024</div>
-                        <ul>
-                            <li>Performed system-level validation of Radeon GPUs on ATE-93K, executing production and
-                                characterization test flows</li>
-                            <li>Debugged silicon and characterized performance metrics and process variation across
-                                various
-                                test conditions</li>
-                            <li>Automated test flows and release notes generation using Bash, Python, Java, and Gradle,
-                                reducing manual workload</li>
-                            <li>Set up DUTs and independently ran system-level tests to support debug and accelerate
-                                validation timelines</li>
-
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <h3>Undergraduate Research Assistant</h3>
-                        <p><i>ReNeu Robotics Lab, UT Austin - Austin, TX</i></p>
-                        <div class="job-date">Sep 2023 - Aug 2024</div>
-                        <ul>
-                            <li>Researched and developed embedded software for an EMG-driven hand exoskeleton to assist
-                                spinal cord injury patients
-                            <li>Optimized EMG data acquisition using C++, EtherCAT, ESI and SOEM, enabling real-time
-                                signal
-                                processing</li>
-                            <li>Integrated advanced hardware and software to improve exoskeleton performance based on
-                                research findings</li>
-                            <li>Created wiring diagrams and documentation for integration, delivered to Sony Japan for
-                                next-generation exoskeleton</li>
-
-                        </ul>
                     </div>
                 </div>
             </div>
+
+            <button id="toggle-button">Show More</button>
+
         </div>
+    </div>
 
-        <div class="section" id="coursework">
-            <h2>Relevant Coursework</h2>
-            <div class="coursework-container">
-                <div class="course-category">
-                    <h3>Engineering</h3>
-                    <table>
-                        <tr>
-                            <td>ECE<br>460N</td>
-                            <td>Computer Architecture</td>
-                        </tr>
-                        <tr>
-                            <td>ECE<br>445L</td>
-                            <td>Embedded Systems Design Lab</td>
-                        </tr>
-                        <tr>
-                            <td>ECE<br>360C</td>
-                            <td>Algorithms</td>
-                        </tr>
-                        <tr>
-                            <td>ECE<br>460J</td>
-                            <td>Data Science Lab</td>
-                        </tr>
-                        <tr>
-                            <td>ECE<br>313</td>
-                            <td>Linear Systems and Signals</td>
-                        </tr>
+    <div class="section" id="experience">
+        <h2>Experience</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-dot dot-pulsate"></div>
+                <div class="timeline-content">
+                    <h3>Incoming Product Engineering Intern</h3>
+                    <p><i>Texas Instruments - Dallas, TX</i></p>
+                    <div class="job-date">May 2025 - Aug 2025</div>
+                </div>
+            </div>
 
-                    </table>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>WiSTEM Externship: AI and Semiconductors Program</h3>
+                    <p><i>UT Austin - Austin, TX</i></p>
+                    <div class="job-date">Dec 2024 - Jan 2025</div>
+                    <p>Explored IC design flows, semiconductor fundamentals, and Cadence EDA tools. Completed modules on
+                        AI models, machine learning, and NLP using IBM Watson Studio.</p>
                 </div>
-                <div class="course-category">
-                    <h3>Math</h3>
-                    <table>
-                        <tr>
-                            <td>M<br>325K</td>
-                            <td>Discrete Math</td>
-                        </tr>
-                        <tr>
-                            <td>M<br>340L</td>
-                            <td>Linear Algebra</td>
-                        </tr>
-                        <tr>
-                            <td>M<br>427L</td>
-                            <td>Vector Calculus</td>
-                        </tr>
-                        <tr>
-                            <td>ECE<br>351H</td>
-                            <td>Probability and Statistics Honors</td>
-                        </tr>
-                    </table>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>GPU System Validation Engineering Intern</h3>
+                    <p><i>AMD - Austin, TX</i></p>
+                    <div class="job-date">May 2024 - Aug 2024</div>
+                    <p>Conducted system-level validation of Radeon GPUs, debugged silicon, and automated test flows
+                        using Bash, Python, Java, and Gradle.</p>
                 </div>
-                <div class="course-category">
-                    <h3>Fall 2025</h3>
-                    <table>
-                        <tr>
-                            <td>ECE<br>382M</td>
-                            <td>VLSI (graduate level)</td>
-                        </tr>
-                        <tr>
-                            <td>ECE<br>382N</td>
-                            <td>Tactile Sensing for Robotics (graduate level)</td>
-                        </tr>
-                        <tr>
-                            <td>ECE<br>364D</td>
-                            <td>Senior Design</td>
-                        </tr>
-                    </table>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>Undergraduate Research Assistant</h3>
+                    <p><i>ReNeu Robotics Lab, UT Austin - Austin, TX</i></p>
+                    <div class="job-date">Sep 2023 - Aug 2024</div>
+                    <p>Researched and developed embedded software for an EMG-driven hand exoskeleton, optimized EMG data
+                        acquisition, and created wiring diagrams for next-generation exoskeleton.</p>
                 </div>
             </div>
         </div>
+    </div>
 
+    <div class="section" id="coursework">
+        <h2>Relevant Coursework</h2>
+        <div class="coursework-container">
+            <div class="course-category">
+                <h3>Engineering</h3>
+                <table>
+                    <tr>
+                        <td>ECE 460N</td>
+                        <td>Computer Architecture</td>
+                    </tr>
+                    <tr>
+                        <td>ECE 445L</td>
+                        <td>Embedded Systems Design Lab</td>
+                    </tr>
+                    <tr>
+                        <td>ECE 360C</td>
+                        <td>Algorithms</td>
+                    </tr>
+                    <tr>
+                        <td>ECE 460J</td>
+                        <td>Data Science Lab</td>
+                    </tr>
+                    <tr>
+                        <td>ECE 313</td>
+                        <td>Linear Systems and Signals</td>
+                    </tr>
 
+                </table>
+            </div>
+            <div class="course-category">
+                <h3>Math</h3>
+                <table>
+                    <tr>
+                        <td>M 325K</td>
+                        <td>Discrete Math</td>
+                    </tr>
+                    <tr>
+                        <td>M 340L</td>
+                        <td>Linear Algebra</td>
+                    </tr>
+                    <tr>
+                        <td>M 427L</td>
+                        <td>Vector Calculus</td>
+                    </tr>
+                    <tr>
+                        <td>ECE 351H</td>
+                        <td>Probability and Statistics Honors</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="course-category">
+                <h3>Fall 2025</h3>
+                <table>
+                    <tr>
+                        <td>ECE 382M</td>
+                        <td>VLSI 1</td>
+                    </tr>
+                    <tr>
+                        <td>ECE 382N</td>
+                        <td>Tactile Sensing for Robotics</td>
+                    </tr>
+                    <tr>
+                        <td>ECE 364D</td>
+                        <td>Introduction to Engineering Design</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
 
-
-        <footer>
-            <p>Isabella Zaens • 2025 </p>
-            <p><i class="fas fa-envelope"></i>
-                <span>isabella.zaens@utexas.edu</span>
-                <br>
-                <i class="fab fa-linkedin"></i>
-                <a href="https://linkedin.com/in/isabella-zaens/" target="_blank" class="linkedin-link">
-                    linkedin.com/in/isabella-zaens/
-                </a>
-            </p>
-        </footer>
+    <script src="index.js"></script>
 </body>
+
 
 </html>
