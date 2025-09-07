@@ -18,7 +18,7 @@ body {
 p {
     font-family: 'Inter', sans-serif;
     line-height: 180%;
-    font-size: 15px;
+    font-size: 18px;
 }
 
 h1,
@@ -340,7 +340,7 @@ footer {
 }
 
 .project-text ul li {
-    font-size: 15px;
+    font-size: 16px;
     color: #737373;
     margin-bottom: 5px;
 }
@@ -467,7 +467,7 @@ h1::after {
 }
 
 .expandable.expanded {
-  max-height: 1000px; /* enough to fit content */
+  max-height: 1000px;
   opacity: 1;
 }
 
@@ -490,4 +490,84 @@ h1::after {
 .expandable {
   overflow: hidden;
   transition: max-height 0.5s ease, opacity 0.5s ease;
+}
+
+html { scroll-behavior: smooth; }
+
+.navbar {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background: #ffffff;
+  z-index: 1000;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.06);
+}
+
+.nav-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0.6rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative; 
+}
+
+.nav-logo {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #111;
+  padding-right: 1rem;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+
+.nav-links a {
+  display: inline-block;
+  padding: 0.46rem 0.9rem;
+  border-radius: 9999px;
+  text-decoration: none;
+  color: #2b2b2b;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 0.98rem;
+  position: relative;   
+  z-index: 2;          
+  transition: color 180ms ease;
+  white-space: nowrap;
+}
+
+.nav-links a:hover {
+  color: #000;
+}
+
+.nav-links a.active {
+  color: #000;
+  font-weight: 600;
+}
+
+.nav-highlight {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateX(var(--x, 0)) translateY(-50%);
+  width: 0px;
+  height: 2.6rem;
+  background: #f0f0f0;
+  border-radius: 9999px;
+  z-index: 1;          
+  transition: transform 340ms cubic-bezier(.2,.9,.3,1),
+              width 340ms cubic-bezier(.2,.9,.3,1),
+              height 340ms cubic-bezier(.2,.9,.3,1);
+  pointer-events: none;
 }
