@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isabella Nicole Zaens</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* CSS for this page's layout and typography */
+        :root {
+            --text-color: #333;
+            --link-color: #007bff;
+            --link-hover-color: #0056b3;
+            --font-family: 'Inter', sans-serif;
+            --sidebar-width: 280px;
+            --divider-color: #ddd;
+        }
+
+        body {
+            font-family: var(--font-family);
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+
+        .site-header {
+            padding: 1rem 2rem;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+        }
+
+        .header-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .site-nav a {
+            text-decoration: none;
+            color: var(--text-color);
+            font-weight: 500;
+            margin-left: 1.5rem;
+            font-size: 0.95rem;
+        }
+
+        .site-nav a:hover {
+            color: var(--link-color);
+        }
+
+        /* The main layout rules for the page with the sidebar */
+        .main-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+            display: flex;
+            gap: 2rem;
+            align-items: flex-start;
+        }
+
+        .sidebar {
+            width: var(--sidebar-width);
+            padding: 0 2rem 0 0;
+            flex-shrink: 0;
+        }
+
+        .profile-pic-container {
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+
+        .profile-pic {
+            width: 175px;
+            height: 233px;
+            border-radius: 30%;
+            object-fit: cover;
+            outline: 1px solid #d3d3d3;
+            outline-offset: 4px;
+        }
+
+        .sidebar-bio h2 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            color: #000;
+        }
+
+        .sidebar-bio p {
+            font-size: 0.9rem;
+            color: #666;
+            margin: 0;
+        }
+
+        .sidebar-links {
+            list-style: none;
+            padding: 0;
+            margin-top: 1rem;
+        }
+
+        .sidebar-links li {
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .sidebar-links a {
+            text-decoration: none;
+            color: var(--text-color);
+            transition: color 0.2s;
+        }
+
+        .sidebar-links a:hover {
+            color: var(--link-color);
+        }
+
+        .sidebar-links i {
+            margin-right: 0.5rem;
+            width: 15px;
+            text-align: center;
+        }
+
+        .content {
+            flex-grow: 1;
+        }
+
+        /* New container for the entire timeline */
+        .timeline-container {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem; /* Space between each academic year block */
+        }
+
+        /* New container to hold a single academic year's semesters */
+        .academic-year {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap:0.1rem;
+        }
+
+        /* Styles for the new divider */
+        .section-divider {
+            grid-column: 1 / -1;
+            border-bottom: 2px solid var(--divider-color);
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        @media (max-width: 992px) {
+            .academic-year {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .main-container {
+                flex-direction: column;
+                padding: 1rem;
+            }
+
+            .sidebar {
+                width: 100%;
+                padding: 0;
+            }
+        }
+
+        @media (max-width: 767px) {
+            .academic-year {
+                grid-template-columns: 1fr;
+            }
+
+            .main-container {
+                flex-direction: column;
+                padding: 1rem;
+            }
+
+            .sidebar {
+                width: 100%;
+                padding: 0;
+            }
+        }
+
+        .semester-section ul {
+            list-style-type: disc;
+            list-style-position: outside;
+            padding-left: 1.25rem;
+            margin: 0.5rem 0 2rem;
+        }
+
+        .semester-section li {
+            line-height: 1.5;
+            margin-bottom: 0.25rem;
+            font-size: 0.9rem;
+        }
+
+        .semester-section li em {
+            font-style: normal;
+            font-weight: 500;
+        }
+
+        .semester-section h3 {
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="site-header">
+        <div class="header-inner">
+            <nav class="site-nav">
+                <a href="index.html">← Back to Home Page</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-container">
+        <aside class="sidebar">
+            <div class="profile-pic-container">
+                <img src="ProfilePic.png" class="profile-pic">
+            </div>
+            <div class="sidebar-bio">
+                <h2>Isabella Nicole Zaens</h2>
+                <p><b>B.S. ECE @ UT Austin</b></p>
+                <p>Electrical and Computer Engineer interested in computer architecture, semiconductors, digital design,
+                    and computing</p>
+            </div>
+            <ul class="sidebar-links">
+                <li><i class="fas fa-university"></i> The University of Texas at Austin</li>
+                <li><a href="#"><i class="fas fa-envelope"></i> isabella.zaens@utexas.edu</a></li>
+                <li><a href="https://linkedin.com/in/isabella-zaens/" target="_blank"><i class="fab fa-linkedin"></i>
+                        LinkedIn</a></li>
+                <li><a href="Isabella Nicole Zaens Resume.pdf" target="_blank"><i class="fas fa-file-alt"></i>
+                        Resume</a></li>
+            </ul>
+        </aside>
+
+        <div class="content">
+            <h1>Coursework and Internship Timeline</h1>
+
+            <div class="timeline-container">
+                <div class="academic-year">
+                    <div class="semester-section">
+                        <h3>Fall 2025</h3>
+                        <ul>
+                            <li>CMOS VLSI Design, <em>ECE 382M</em></li>
+                            <li>Tactile Sensing for Robotics, <em>ECE 382N</em></li>
+                            <li>Honors Senior Capstone I, <em>ECE 364D</em></li>
+                            <li>Digital Media Design, <em>RTF 329C</em></li>
+                        </ul>
+                    </div>
+
+                    <div class="semester-section">
+                        <h3>Spring 2026</h3>
+                        <ul>
+                            <li>Honors Senior Capstone II, <em>ECE 464H</em></li>
+                        </ul>
+                    </div>
+
+                    <div class="semester-section">
+                        </div>
+                </div>
+                <div class="section-divider"></div>
+
+                <div class="academic-year">
+                    <div class="semester-section">
+                        <h3>Fall 2024</h3>
+                        <ul>
+                            <li>Algorithms, <em>ECE 360C</em></li>
+                            <li>Linear Systems and Signals, <em>ECE 313</em></li>
+                            <li>Vector Calculus, <em>M 427L</em></li>
+                            <li>Power and Place: Making Texas History, <em>AFR 320C</em></li>
+                        </ul>
+                    </div>
+
+                    <div class="semester-section">
+                        <h3>Spring 2025</h3>
+                        <ul>
+                            <li>Embedded Systems Design Lab, <em>ECE 445L</em></li>
+                            <li>Data Science Lab, <em>ECE 460J</em></li>
+                        </ul>
+                    </div>
+
+                    <div class="semester-section">
+                        <h3>Summer 2025</h3>
+                        <ul>
+                            <li>High-Voltage Drivers and Bias Test Engineering Intern, <em>Texas Instruments</em></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="section-divider"></div>
+
+                <div class="academic-year">
+                    <div class="semester-section">
+                        <h3>Fall 2023</h3>
+                        <ul>
+                            <li>Circuit Theory Honors, <em>ECE 411H</em></li>
+                            <li>Digital Logic Design, <em>ECE 316</em></li>
+                            <li>Linear Algebra, <em>M 340L</em></li>
+                            <li>How Things Work, <em>UGS 303</em></li>
+                        </ul>
+                    </div>
+
+                    <div class="semester-section">
+                        <h3>Spring 2024</h3>
+                        <ul>
+                            <li>Computer Architecture, <em>ECE 460N</em></li>
+                            <li>Probabilty/Random Processes Honors, <em>ECE 351H</em></li>
+                            <li>Engineering Communication, <em>ECE 333T</em></li>
+                            <li>Discrete Mathematics, <em>M 325K</em></li>
+                        </ul>
+                    </div>
+
+                    <div class="semester-section">
+                        <h3>Summer 2024</h3>
+                        <ul>
+                            <li>Software Design and Implementation II, <em>ECE 422C</em></li>
+                            <li>GPU System-Level Test Engineering Intern, <em>AMD</em></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="section-divider"></div>
+
+                <div class="academic-year">
+                    <div class="semester-section">
+                        <h3>Fall 2022</h3>
+                        <ul>
+                            <li>Intro to Electrical Engineering Honors, <em>ECE 302H</em></li>
+                            <li>Intro to Computing, <em>ECE 306</em></li>
+                            <li>Sequences, Series, and Multivariable Calculus, <em>M 408D</em></li>
+                            <li>Intro to Clasical Mythology, <em>CC 303</em></li>
+                        </ul>
+                    </div>
+
+                    <div class="semester-section">
+                        <h3>Spring 2023</h3>
+                        <ul>
+                            <li>Software Design and Implementation I Honors, <em>ECE 312H</em></li>
+                            <li>Intro to Embedded Systems Honors, <em>ECE 319H</em></li>
+                            <li>Honors Leadership Seminar, <em>ECE 107H</em></li>
+                            <li>Differential Equations, <em>M 427J</em></li>
+                            <li>Cultural Anthropology, <em>ANT 302</em></li>
+                        </ul>
+                    </div>
+
+                    <div class="semester-section">
+                        </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

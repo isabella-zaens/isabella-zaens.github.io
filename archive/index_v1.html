@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="icon" href="favicon.png"> -->
+    <title>Isabella Zaens</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jersey+10&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <link rel="stylesheet" href="index_v1.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <ul class="nav-links">
+                <li><a href="#about" class="active">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#coursework">Coursework</a></li>
+                <li><a href="Isabella Nicole Zaens Resume.pdf" target="_blank">Resume</a></li>
+            </ul>
+            <span class="nav-highlight"></span>
+        </div>
+    </nav>
+
+
+
+    <div class="section intro">
+        <h1>Isabella Zaens</h1>
+        <p style="font-size: 17px;"><strong>Electrical and Computer Engineering @ UT Austin</strong></p>
+        <p class="purple-text">
+            <i class="fas fa-envelope"></i>
+            <span>isabella.zaens@utexas.edu</span>
+            <br>
+            <i class="fab fa-linkedin"></i>
+            <a href="https://linkedin.com/in/isabella-zaens/" target="_blank" class="linkedin-link">
+                linkedin.com/in/isabella-zaens/
+            </a>
+            <br>
+            <i class="fas fa-file-alt"></i>
+            <a href="Isabella Nicole Zaens Resume.pdf" target="_blank" class="linkedin-link">
+                Resume
+            </a>
+        </p>
+    </div>
+
+    <div class="section" id="about">
+        <h2>About</h2>
+        <p>Hello! I’m Isabella, a fourth-year Electrical and Computer Engineering student at the University of Texas at
+            Austin.</p>
+
+        <p>I’ve built a strong foundation in semiconductors, hardware, software development, and robotics through
+            internships at AMD and Texas Instruments, undergraduate research in robotics, and hands-on projects.</p>
+
+        <p>My passion lies in computing systems and semiconductors, with a particular focus on computer architecture,
+            digital design, and hardware development.</p>
+
+        <p>I enjoy building systems from the ground up, solving complex problems, and collaborating on
+            projects that integrate hardware and software in meaningful ways. If you're interested in connecting or
+            working together, feel free to reach out!</p>
+    </div>
+
+    <div class="section" id="projects">
+        <h2>PROJECTS</h2>
+        <div class="project-grid">
+
+            <div class="project">
+                <div class="project-content">
+                    <div class="project-text">
+                        <h3>LC-3b Microarchitecture Simulator</h3>
+                        <ul>
+                            <li>Cycle-level simulator for the LC-3b microarchitecture using C and
+                                LC-3b assembly</li>
+                            <li>Implemented virtual memory management with page table and page fault
+                                handling</li>
+                            <li>Added support for unaligned access, protection, page fault, and unknown opcode
+                                exceptions</li>
+                            <li>Modified the datapath, state diagram, and microsequencer to support pipelining and
+                                memory management</li>
+                        </ul>
+                        <div class="tech-tags">
+                            <span>C</span>
+                            <span>LC-3b Assembly</span>
+                            <span>Computer Architecture</span>
+                        </div>
+                    </div>
+                    <div class="project-image">
+                        <img src="project_files/projects_lcsim.png" alt="LC-3b Simulator">
+                    </div>
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="project-content">
+                    <div class="project-text">
+                        <h3>4-bit SRAM Design and Characterization</h3>
+                        <ul>
+                            <li>Designed a 4-bit SRAM cell at the transistor level using Cadence Virtuoso:
+                                schematic, layout, parasitic extraction</li>
+                            <li>Characterized propagation delay with HSPICE simulations across varying input
+                                slews and output loads</li>
+                            <li>Modeled a 32x32 SRAM array using RC delay model and Spectre simulations to determine
+                                worst-case access times</li>
+                            <li>Optimized layout for minimal area while maintaining stable read/write
+                                performance</li>
+                        </ul>
+                        <div class="tech-tags">
+                            <span>Cadence Virtuoso</span>
+                            <span>HSPICE</span>
+                            <span>SRAM</span>
+                            <span>VLSI</span>
+                            <span>RC Modeling</span>
+                        </div>
+                    </div>
+                    <div class="project-image">
+                        <img src="project_files/projects_sram.png" alt="Inverterr">
+                    </div>
+                </div>
+            </div>
+            <div class="project">
+                <div class="project-content">
+                    <div class="project-text">
+                        <h3>Machine Learning Binary Classification Model</h3>
+                        <ul>
+                            <li>Developed and optimized a LightGBM model for binary classification, using Optuna to
+                                refine hyperparameters</li>
+                            <li>Implemented cross-validation with StratifiedKFold to assess model stability, using ROC
+                                AUC as the performance metric</li>
+                            <li>Used parallel processing to accelerate model training, achieving 11th place out of 104
+                                in the Kaggle competition </li>
+
+                        </ul>
+                        <div class="tech-tags">
+                            <span>ML</span>
+                            <span>Python</span>
+                            <span>Hyperparameter Tuning</span>
+                            <span>Gradient Boosting</span>
+                        </div>
+                    </div>
+                    <div class="project-image" style="display: flex;">
+
+                        <div style="flex: 1; display: flex; flex-direction: column; height: 100%;">
+                            <img src="project_files/project_ml1.png"
+                                style="width: 100%; height: 50%; object-fit: cover;" />
+                            <img src="project_files/project_ml3.png"
+                                style="width: 100%; height: 50%; object-fit: cover;" />
+                        </div>
+
+                        <div style="flex: 1; height: 100%;">
+                            <img src="project_files/project_ml2.png" />
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="project">
+                <div class="project-content">
+                    <div class="project-text">
+                        <h3>Cylindrical Volumetric Display</h3>
+                        <ul>
+                            <li>Built a rotating LED display with 72 DMA-driven NeoPixels mounted on a custom fan blade
+                                assembly</li>
+                            <li>Established Wi-Fi communication between stationary and rotating units using TM4Cs and
+                                ESP8266 modules</li>
+                            <li>Designed custom PCBs, power circuitry, and CAD enclosures; fabricated components using
+                                3D printing and laser cutting</li>
+
+                        </ul>
+                        <div class="tech-tags">
+                            <span>C</span>
+                            <span>Microcontroller</span>
+                            <span>Circuit Design</span>
+                            <span>PCB Design</span>
+                            <span>CAD</span>
+                        </div>
+                    </div>
+                    <div class="project-image" style="display: flex;">
+
+                        <div style="flex: 1; display: flex; flex-direction: column; height: 100%;">
+                            <img src="project_files/projects_volumetric1.jpg"
+                                style="width: 100%; height: 50%; object-fit: cover;" />
+                            <img src="project_files/project_volumetric2.jpg"
+                                style="width: 100%; height: 50%; object-fit: cover;" />
+                        </div>
+
+                        <div style="flex: 1; height: 100%;">
+                            <video style="width: 100%; height: 100%; object-fit: cover;" controls autoplay muted loop>
+                                <source src="project_files/project_volumetric.MOV" type="video/mp4">
+                            </video>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="project">
+                <div class="project-content">
+                    <div class="project-text">
+                        <h3>Two-Player Space Invaders</h3>
+                        <ul>
+                            <li>Developed a two-player Space Invaders game on a TM4C microcontroller using C++ and
+                                ARM
+                                assembly</li>
+                            <li>Designed a custom game board PCB with analog joysticks, LEDs, switches, and an
+                                ST7735
+                                LCD using EAGLE</li>
+                            <li>Integrated interrupts for dynamic sound effects via DAC output</li>
+                        </ul>
+                        <div class="tech-tags">
+                            <span>C++</span>
+                            <span>ARM Assembly</span>
+                            <span>PCB Design</span>
+                            <span>Microcontroller</span>
+                        </div>
+                    </div>
+                    <div class="project-image">
+                        <img src="project_files/project_spaceinvaders_2.jpg" alt="Space Invaders">
+                    </div>
+                </div>
+            </div>
+
+            <div id="more-projects" class="expandable">
+                <div class="project">
+                    <div class="project-content">
+                        <div class="project-text">
+                            <h3>UT Austin Battlebots League</h3>
+                            <ul>
+                                <li>Developed a full-body spinner robot for combat competition</li>
+                                <li>Designed the robot's electrical system using C and an Arduino Uno Rev3
+                                    microcontroller
+                                </li>
+                                <li>Integrated ESC, RC controller, power supply, motors,
+                                    and remote kill switch</li>
+                                <li>Conducted testing to ensure reliability and performance in competitive matches
+                                </li>
+                            </ul>
+                            <div class="tech-tags">
+                                <span>C</span>
+                                <span>Robotics</span>
+                                <span>Microcontroller</span>
+                            </div>
+                        </div>
+                        <div class="project-image">
+                            <img src="project_files/projects_battlebots.png" alt="Texas Battlebots">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button id="toggle-button">Show More</button>
+
+        </div>
+    </div>
+
+    <div class="section" id="experience">
+        <h2>Experience</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-dot dot-pulsate"></div>
+                <div class="timeline-content">
+                    <h3>Test Engineering Intern - High Voltage Drivers and Bias</h3>
+                    <p><i>Texas Instruments - Dallas, TX</i></p>
+                    <div class="job-date">May 2025 - Aug 2025</div>
+                    <p>Developed diagnostic software, timing tests, and characterized the body diode behavior of
+                        isolated DC/DC modules. Conducted high-voltage and high-temperature testing and analyzed leakage
+                        currents and arcing on half-bridge driver lead frames.</p>
+                </div>
+            </div>
+
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>GPU System Validation Engineering Intern</h3>
+                    <p><i>AMD - Austin, TX</i></p>
+                    <div class="job-date">May 2024 - Aug 2024</div>
+                    <p>Conducted system-level validation of Radeon GPUs, debugged silicon, and automated test flows
+                        using Bash, Python, Java, and Gradle.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>Undergraduate Research Assistant</h3>
+                    <p><i>ReNeu Robotics Lab, UT Austin - Austin, TX</i></p>
+                    <div class="job-date">Sep 2023 - Aug 2024</div>
+                    <p>Researched and developed embedded software for an EMG-driven hand exoskeleton, optimized EMG data
+                        acquisition, and created wiring diagrams for next-generation exoskeleton.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section" id="coursework">
+        <h2>Relevant Coursework</h2>
+        <div class="coursework-container">
+            <div class="course-category">
+                <h3>Engineering</h3>
+                <table>
+                    <tr>
+                        <td>ECE 460N</td>
+                        <td>Computer Architecture</td>
+                    </tr>
+                    <tr>
+                        <td>ECE 445L</td>
+                        <td>Embedded Systems Design Lab</td>
+                    </tr>
+                    <tr>
+                        <td>ECE 360C</td>
+                        <td>Algorithms</td>
+                    </tr>
+                    <tr>
+                        <td>ECE 460J</td>
+                        <td>Data Science Lab</td>
+                    </tr>
+                    <tr>
+                        <td>ECE 313</td>
+                        <td>Linear Systems and Signals</td>
+                    </tr>
+
+                </table>
+            </div>
+            <div class="course-category">
+                <h3>Math</h3>
+                <table>
+                    <tr>
+                        <td>M 325K</td>
+                        <td>Discrete Math</td>
+                    </tr>
+                    <tr>
+                        <td>M 340L</td>
+                        <td>Linear Algebra</td>
+                    </tr>
+                    <tr>
+                        <td>M 427L</td>
+                        <td>Vector Calculus</td>
+                    </tr>
+                    <tr>
+                        <td>ECE 351H</td>
+                        <td>Probability and Statistics Honors</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="course-category">
+                <h3>Fall 2025</h3>
+                <table>
+                    <tr>
+                        <td>ECE 382M</td>
+                        <td>CMOS VLSI</td>
+                    </tr>
+                    <tr>
+                        <td>ECE 382N</td>
+                        <td>Tactile Sensing for Robotics</td>
+                    </tr>
+                    <tr>
+                        <td>ECE 364D</td>
+                        <td>Senior Capstone</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+
+</html>
