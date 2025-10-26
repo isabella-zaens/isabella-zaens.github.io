@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
+        /* New CSS for the pop-up modal */
         .modal {
             display: none;
             position: fixed;
@@ -121,11 +122,12 @@
 
             <h2 id="projects">Projects</h2>
             <div class="project-gallery">
-                <a href="#" class="gallery-item" data-modal-target="lc3b-modal">
-                    <div class="project-thumbnail" style="background-image: url('project_files/lc3_sim.png');">
+                <a href="#" class="gallery-item" data-modal-target="vlsi-alu-modal">
+                    <div class="project-thumbnail"
+                        style="background-image: url('project_files/alu.png'); background-size: cover; background-position: center;">
                     </div>
                     <div class="project-title-overlay">
-                        <h3>LC-3b Microarchitecture Simulator</h3>
+                        <h3>16-bit ALU Custom IC Design</h3>
                     </div>
                 </a>
 
@@ -133,7 +135,16 @@
                     <div class="project-thumbnail" style="background-image: url('project_files/sram.png');">
                     </div>
                     <div class="project-title-overlay">
-                        <h3>Full Custom 4-bit SRAM Design</h3>
+                        <h3>4-bit SRAM Custom IC Design</h3>
+                    </div>
+                </a>
+
+
+                <a href="#" class="gallery-item" data-modal-target="lc3b-modal">
+                    <div class="project-thumbnail" style="background-image: url('project_files/lc3_sim.png');">
+                    </div>
+                    <div class="project-title-overlay">
+                        <h3>LC-3b Microarchitecture Simulator</h3>
                     </div>
                 </a>
 
@@ -143,15 +154,6 @@
                     </div>
                     <div class="project-title-overlay">
                         <h3>CNNs for Bird Classification</h3>
-                    </div>
-                </a>
-
-                <a href="#" class="gallery-item" data-modal-target="ml-model-modal">
-                    <div class="project-thumbnail"
-                        style="background-image: url('project_files/binary_classification.png');">
-                    </div>
-                    <div class="project-title-overlay">
-                        <h3>Machine Learning Binary Classification Model</h3>
                     </div>
                 </a>
 
@@ -178,28 +180,109 @@
                         <h3>UT Austin Battlebots League</h3>
                     </div>
                 </a>
+
+
             </div>
 
             <!-- **************************** POP-UP WINDOWS ****************************  -->
+            <div id="vlsi-alu-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close-button">&times;</span>
+
+                    <div class="modal-image-banner"
+                        style="background-image: url('project_files/alu.png'); height: 160px; background-size: cover; background-position: center;">
+                    </div>
+
+                    <div class="modal-body">
+                        <h2>16-bit ALU Custom IC Design</h2>
+
+                        <div class="modal-details">
+                            <p>Designed an ALU for a RISC microprocessor at the gate level,
+                                supporting arithmetic, logical, comparison, and shift operations.</p>
+
+                            <ul>
+                                <li>Integrated a radix-2 Kogge–Stone adder to achieve logarithmic
+                                    carry propagation and minimize critical-path delay.</li>
+                                <li>Implemented a barrel shifter for logical, arithmetic, and
+                                    rotate shifts.</li>
+                                <li>Constructed datapath and control logic using Cadence
+                                    Virtuoso for schematic and layout design.</li>
+                                <li>Verified functionality with NC Verilog and optimized critical path delay via
+                                    fanout minimization and bubble pushing.</li>
+                                <li>Executed Automatic Place and Route (APR) in Cadence Innovus and Static
+                                    Timing Analysis (STA) Synopsys PrimeTime on the post-layout
+                                    design.
+                                </li>
+                            </ul>
+
+                            <div class="modal-tags">
+                                <span>VLSI</span>
+                                <span>Cadence Virtuoso</span>
+                                <span>Verilog</span>
+                                <span>PrimeTime</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="sram-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close-button">&times;</span>
+                    <div class="modal-image-banner" style="background-image: url('project_files/sram.png');"></div>
+                    <div class="modal-body">
+                        <h2>4-bit SRAM Custom IC Design</h2>
+                        <div class="modal-details">
+                            <p>Designed a full-custom 4-bit SRAM cell at the
+                                transistor level, focusing on area, read/write stability, and timing
+                                characterization.</p>
+                            <ul>
+                                <li>Created transistor-level schematic and layout in Cadence Virtuoso.</li>
+                                <li>Characterized access, read, and write delays using HSPICE and Spectre
+                                    simulations across varying input slews and output loads.</li>
+                                <li>Utilized DRC and LVS to validate physical layout accuracy and
+                                    schematic consistency.</li>
+                            </ul>
+                            <div class="modal-tags">
+                                <span>VLSI</span>
+                                <span>Cadence Virtuoso</span>
+                                <span>HSPICE</span>
+                                <span>Spectre</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
             <div id="lc3b-modal" class="modal">
                 <div class="modal-content">
                     <span class="close-button">&times;</span>
-                    <div class="modal-image-banner" style="background-image: url('project_files/lc3_sim.png');">
-                    </div>
+                    <div class="modal-image-banner" style="background-image: url('project_files/lc3_sim.png');"></div>
                     <div class="modal-body">
                         <h2>LC-3b Microarchitecture Simulator</h2>
                         <div class="modal-details">
-                            <p>A cycle-level simulator for the LC-3b microarchitecture using C and LC-3b assembly. </p>
+                            <p>Developed a pipelined cycle simulator for the LC-3b microarchitecture, implementing
+                                datapath digital logic, instruction execution, and exception handling in C and LC-3b
+                                assembly.</p>
                             <ul>
-                                <li>Implemented virtual memory management with page table and page fault handling.</li>
+                                <li>Created microcode and designed a state-cycle simulator to model
+                                    microsequencer-driven instruction execution.
+                                </li>
+                                <li>Implemented arithmetic and logic operations, branching, and trap routines
+                                    according to the LC-3b ISA.</li>
                                 <li>Added support for unaligned access, protection, page fault, and unknown opcode
                                     exceptions.</li>
-                                <li>Modified the datapath, state diagram, and microsequencer to support pipelining and
-                                    memory management.</li>
+                                <li>Extended the datapath to support virtual memory using a one-level page
+                                    table with address translation and fault detection.</li>
                             </ul>
+
                             <div class="modal-tags">
                                 <span>C</span>
                                 <span>LC-3b Assembly</span>
+                                <span>Microarchitecture</span>
+                                <span>Virtual Memory</span>
                                 <span>Computer Architecture</span>
                             </div>
                         </div>
@@ -207,34 +290,6 @@
                 </div>
             </div>
 
-            <div id="sram-modal" class="modal">
-                <div class="modal-content">
-                    <span class="close-button">&times;</span>
-                    <div class="modal-image-banner" style="background-image: url('project_files/sram.png');">
-                    </div>
-                    <div class="modal-body">
-                        <h2>4-bit SRAM Design and Characterization</h2>
-                        <div class="modal-details">
-                            <p>Designed a full custom 4-bit SRAM cell at the transistor level using Cadence Virtuoso: schematic,
-                                layout, and parasitic extraction.</p>
-                            <ul>
-                                <li>Characterized propagation delay with HSPICE simulations across varying input slews
-                                    and output loads.</li>
-                                <li>Modeled a 32x32 memory array using RC pi delay model and Spectre simulations to
-                                    determine worst-case access times.</li>
-                                <li>Optimized layout for minimal area while maintaining stable read/write performance.
-                                </li>
-                            </ul>
-                            <div class="modal-tags">
-                                <span>VLSI</span>
-                                <span>Cadence Virtuoso</span>
-                                <span>Spectre</span>
-                                <span>HSPICE</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
             <div id="bird-cnns-modal" class="modal">
                 <div class="modal-content">
@@ -243,18 +298,20 @@
                     <div class="modal-body">
                         <h2>CNNs for Bird Classification</h2>
                         <div class="modal-details">
-                            <p>This project focused on training and comparing different convolutional neural networks
-                                (CNNs) that classify bird species from images.
-                                The goal was to train various models for prediction, test its robustness against image
-                                noise, and improve its speed through pruning without
-                                sacrificing performance.</p>
+                            <p>This project focused on designing, training, and evaluating different convolutional
+                                neural networks (CNNs)
+                                to classify bird species from images. The objective was to optimize model prediction
+                                accuracy,
+                                assess robustness under image noise, and improve speed through
+                                model pruning
+                                without compromising performance.</p>
 
                             <ul>
-                                <li>Dataset: NABirds Dataset from the Cornell Lab of Ornithology,
-                                    which contains over 48,000 annotated images across 550 categories, including
-                                    different species, genders, and age groups.</li>
-                                <li>Models: ResNet (18, 50, and 101), MobileNetV2, EfficientNet-B0, and
-                                    DenseNet121</li>
+                                <li>Dataset: NABirds Dataset from the Cornell Lab of Ornithology with over 48,000
+                                    annotated images spanning 550 categories, including species, genders, and age
+                                    groups.</li>
+                                <li>Models: ResNet (18, 50, 101), MobileNetV2, EfficientNet-B0, and DenseNet121
+                                </li>
                             </ul>
 
                             <div class="modal-tags">
@@ -262,34 +319,6 @@
                                 <span>CNNs</span>
                                 <span>Model Pruning</span>
                                 <span>Gaussian Blur</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div id="ml-model-modal" class="modal">
-                <div class="modal-content">
-                    <span class="close-button">&times;</span>
-                    <div class="modal-image-banner"
-                        style="background-image: url('project_files/binary_classification.png');">
-                    </div>
-                    <div class="modal-body">
-                        <h2>Machine Learning Binary Classification Model</h2>
-                        <div class="modal-details">
-                            <p>Developed and optimized a LightGBM model for binary classification, using Optuna to
-                                refine hyperparameters.</p>
-                            <ul>
-                                <li>Implemented cross-validation with StratifiedKFold to assess model stability, using
-                                    ROC AUC as the performance metric.</li>
-                                <li>Used parallel processing to accelerate model training, achieving 11th place out of
-                                    104 in the Kaggle competition.</li>
-                            </ul>
-                            <div class="modal-tags">
-                                <span>ML</span>
-                                <span>Python</span>
-                                <span>Hyperparameter Tuning</span>
-                                <span>Gradient Boosting</span>
                             </div>
                         </div>
                     </div>
@@ -314,10 +343,10 @@
                             </div>
                             <div class="text-content">
                                 <p>Built a rotating LED display with 72 DMA-driven NeoPixels mounted on a custom fan
-                                    blade assembly.</p>
+                                    blade assembly to create a persistence-of-vision effect.</p>
                                 <ul>
-                                    <li>Designed custom PCBs, power circuitry, and CAD enclosures</li>
-                                    <li>Fabricated components using 3D printing and laser cutting.</li>
+                                    <li>Designed custom PCBs, power circuitry, and CAD enclosures.</li>
+                                    <li>Fabricated components via 3D printing and laser cutting.</li>
                                 </ul>
                                 <img src="project_files/volumetric_fan_full.jpg" alt="Cylindrical Volumetric Display"
                                     style="flex: 1; max-width: 50%;">
@@ -325,9 +354,9 @@
                             <div class="modal-tags">
                                 <span>C</span>
                                 <span>Microcontroller</span>
-                                <span>Circuit Design</span>
                                 <span>PCB Design</span>
                                 <span>CAD</span>
+                                <span>Embedded Systems</span>
                             </div>
                         </div>
                     </div>
@@ -348,12 +377,13 @@
                                 <li>Designed a custom game board PCB with analog joysticks, LEDs, switches, and an
                                     ST7735 LCD using EAGLE.</li>
                                 <li>Implemented sound effects via interrupts and DAC output.</li>
-                            </ul> 
+                            </ul>
                             <div class="modal-tags">
                                 <span>C++</span>
                                 <span>ARM Assembly</span>
                                 <span>PCB Design</span>
                                 <span>Microcontroller</span>
+                                <span>Embedded Systems</span>
                             </div>
                         </div>
                     </div>
@@ -405,7 +435,7 @@
                     <div class="timeline-item">
                         <div class="timeline-dot dot-pulsate"></div>
                         <div class="timeline-content">
-                            <h3>High-Voltage Drivers and Bias Test Engineering Intern</h3>
+                            <h3>Test Engineering Intern - High Voltage Drivers and Bias</h3>
                             <p><i>Texas Instruments</i></p>
                             <div class="job-date">May 2025 - Aug 2025</div>
                             <p>Developed diagnostic software, timing tests, and characterized the body diode behavior of
@@ -413,16 +443,18 @@
                                 leakage currents and arcing on half-bridge driver lead frames.</p>
                         </div>
                     </div>
+
                     <div class="timeline-item">
                         <div class="timeline-dot"></div>
                         <div class="timeline-content">
-                            <h3>GPU System-Level-Test Engineering Intern</h3>
+                            <h3>GPU System Validation Engineering Intern</h3>
                             <p><i>Advanced Micro Devices (AMD)</i></p>
                             <div class="job-date">May 2024 - Aug 2024</div>
-                            <p>Conducted system-level tests on next-gen Radeon GPUs, debugged silicon, and automated test
+                            <p>Conducted system-level validation of Radeon GPUs, debugged silicon, and automated test
                                 flows using Bash, Python, Java, and Gradle.</p>
                         </div>
                     </div>
+
                     <div class="timeline-item">
                         <div class="timeline-dot"></div>
                         <div class="timeline-content">
@@ -430,9 +462,10 @@
                             <p><i>Rehabilitation Neuromuscular (ReNeu) Robotics Lab</i></p>
                             <div class="job-date">Sep 2023 - Aug 2024</div>
                             <p>Researched and developed embedded software for an EMG-driven hand exoskeleton, optimized
-                                EMG data acquisition and created wiring diagrams for the next-generation exoskeleton.</p>
+                                EMG data acquisition, and created wiring diagrams for next-generation exoskeleton.</p>
                         </div>
                     </div>
+
                 </div>
             </div>
 
@@ -441,8 +474,6 @@
             <!-- **************************** COURSEWORK ****************************  -->
             <div class="section" id="coursework">
                 <h2>Relevant Coursework</h2>
-                <!-- <p>Click <a href="coursework_internship.html">here </a>for Coursework and Internship Timeline</p> -->
-
                 <div class="coursework-container">
                     <div class="course-category">
                         <h3>Graduate ECE Coursework</h3>
