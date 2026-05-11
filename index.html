@@ -1,171 +1,275 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Isabella Nicole Zaens</title>
+    <title>Isabella Zaens</title>
     <link rel="stylesheet" href="index.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
-
 <body>
+
+    <!-- ─── TOP NAV ─── -->
     <header class="header">
         <nav class="nav">
-            <span style="font-weight: 600;">Isabella Zaens</span>
+            <a class="nav-name" href="#about">Isabella Zaens</a>
             <div class="nav-right">
                 <ul class="nav-links">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#coursework">Coursework</a></li>
+                    <li><a href="#about"      class="nav-item">About</a></li>
+                    <li><a href="#projects"   class="nav-item">Projects</a></li>
+                    <li><a href="#experience" class="nav-item">Experience</a></li>
+                    <li><a href="#coursework" class="nav-item">Coursework</a></li>
                 </ul>
-                <button class="theme-toggle" aria-label="Toggle dark mode">
-                    <i class="fas fa-moon"></i>
-                </button>
+                <div class="nav-icons">
+                    <button class="theme-toggle" aria-label="Toggle theme"><i class="fas fa-sun"></i></button>
+                </div>
             </div>
         </nav>
     </header>
 
-    <section class="hero" id="about">
-        <h1>Isabella Nicole Zaens</h1>
-        <p class="subtitle">Electrical & Computer Engineering Student</p>
-        <p style="color: var(--text-secondary); max-width: 650px;">
-            Fourth-year undergraduate student at UT Austin focusing on digital design and computer architecture.
-            I've gained hands-on
-            industry experience through internships at Texas Instruments and AMD, working on IC design validation,
-            high-voltage testing, and GPU characterization. Pursuing a Master's degree to deepen my foundation in
-            digital design and computer architecture.
-        </p>
-        <div class="hero-links">
-            <a href="mailto:isabella.zaens@utexas.edu"><i class="fas fa-envelope"></i> Email</a>
-            <a href="https://linkedin.com/in/isabella-zaens/" target="_blank"><i class="fab fa-linkedin"></i>
-                LinkedIn</a>
-            <a href="Isabella_Nicole_Zaens_Resume.pdf" target="_blank"><i class="fas fa-file-alt"></i> Resume</a>
-        </div>
-    </section>
+    <!-- ─── PAGE CONTENT ─── -->
+    <main class="container">
 
-    <div class="container">
+        <!-- About -->
+        <section class="hero" id="about">
+            <p class="hero-greeting">Hi, I'm</p>
+            <h1>Isabella Zaens.</h1>
+
+            <p class="hero-body">
+                I recently completed my BS in Electrical &amp; Computer Engineering at UT Austin and am beginning my Master's in ECE at Rice University this fall.
+            </p>
+            <p class="hero-body">
+                I've interned at Texas Instruments and AMD, working on high-voltage IC test engineering and GPU system validation. My interests span digital design, computer architecture, and hardware-software co-design.
+            </p>
+
+            <!-- <div class="hero-schools">
+                <div class="hero-school">
+                    <img src="https://logo.clearbit.com/utexas.edu" alt="UT Austin" onerror="this.style.display='none'">
+                    <div>
+                        <div class="school-name">UT Austin</div>
+                        <div class="school-degree">BS Electrical &amp; Computer Engineering · 2026</div>
+                    </div>
+                </div>
+                <div class="hero-school-arrow">→</div>
+                <div class="hero-school">
+                    <img src="https://logo.clearbit.com/rice.edu" alt="Rice University" onerror="this.style.display='none'">
+                    <div>
+                        <div class="school-name">Rice University</div>
+                        <div class="school-degree">MS Electrical &amp; Computer Engineering · 2028</div>
+                    </div>
+                </div>
+            </div> -->
+
+            <div class="hero-links">
+                <a href="mailto:sneazinpz@gmail.com" class="hero-icon" title="Email"><i class="fas fa-envelope"></i></a>
+                <a href="https://linkedin.com/in/isabella-zaens/" target="_blank" class="hero-icon" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="Isabella_Nicole_Zaens_Resume.pdf" target="_blank"><i class="fas fa-file-alt"></i> View Resume</a>
+            </div>
+        </section>
+
+        <!-- Projects -->
         <section class="section" id="projects">
-            <h2 class="section-title">Projects</h2>
-            <div class="projects-grid">
-                <a href="#" class="project-card" data-modal="wishbone-modal">
-                    <div class="project-image">
-                        <img src="project_files/ssp.png" alt="SoC SSP and WISHBONE Bus Controller">
+            <div class="section-header">
+                <span class="section-label">Projects</span>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="project-list">
+
+                <a href="#" class="project-row" data-modal="wishbone-modal">
+                    <div class="project-row-img">
+                        <img src="images/ssp.png" alt="SoC SSP and WISHBONE Bus">
                     </div>
-                    <h3 class="project-title">SoC SSP & WISHBONE Bus</h3>
-                    <p class="project-desc">RTL Design</p>
+                    <div class="project-row-body">
+                        <div class="project-row-top">
+                            <h3 class="project-row-title">SoC SSP &amp; WISHBONE Bus Controller</h3>
+                            <span class="project-row-arrow">↗</span>
+                        </div>
+                        <p class="project-row-summary">Designed a SoC in Verilog with an 8-bit SSP, 32-bit WISHBONE bus controller, and clock management unit. Synthesized and placed-and-routed in a 45nm PDK using Synopsys and Cadence tools.</p>
+                        <div class="project-row-tags">
+                            <span>VLSI</span><span>Verilog</span><span>Cadence Innovus</span><span>45nm PDK</span>
+                        </div>
+                    </div>
                 </a>
 
-                <a href="#" class="project-card" data-modal="fp16-modal">
-                    <div class="project-image">
-                        <img src="project_files/f16_multpliers.png" alt="FP16 Matrix Multiplier">
+                <a href="#" class="project-row" data-modal="fp16-modal">
+                    <div class="project-row-img">
+                        <img src="images/f16_multpliers.png" alt="FP16 Matrix Multipliers">
                     </div>
-                    <h3 class="project-title">FP16 Matrix Multipliers</h3>
-                    <p class="project-desc">Unfused vs. Fused RTL</p>
+                    <div class="project-row-body">
+                        <div class="project-row-top">
+                            <h3 class="project-row-title">FP16 Matrix Multipliers</h3>
+                            <span class="project-row-arrow">↗</span>
+                        </div>
+                        <p class="project-row-summary">Compared unfused combinational and fused pipelined systolic 3×3 FP16 matrix multipliers. Analyzed area, power, and timing trade-offs after synthesis and APR in a 45nm process.</p>
+                        <div class="project-row-tags">
+                            <span>VLSI</span><span>Verilog</span><span>Synopsys</span><span>Cadence Innovus</span>
+                        </div>
+                    </div>
                 </a>
 
-                <a href="#" class="project-card" data-modal="alu-modal">
-                    <div class="project-image">
-                        <img src="project_files/alu1.png" alt="16-bit ALU">
+                <a href="#" class="project-row" data-modal="alu-modal">
+                    <div class="project-row-img">
+                        <img src="images/alu1.png" alt="16-bit ALU">
                     </div>
-                    <h3 class="project-title">16-bit ALU Custom IC</h3>
-                    <p class="project-desc">Designed at gate-level</p>
+                    <div class="project-row-body">
+                        <div class="project-row-top">
+                            <h3 class="project-row-title">16-bit ALU Custom IC</h3>
+                            <span class="project-row-arrow">↗</span>
+                        </div>
+                        <p class="project-row-summary">Gate-level ALU for a RISC processor using a Kogge-Stone adder and barrel shifter. Designed in Cadence Virtuoso, verified in NC Verilog, and timing analyzed with Synopsys PrimeTime.</p>
+                        <div class="project-row-tags">
+                            <span>VLSI</span><span>Cadence Virtuoso</span><span>HSPICE</span>
+                        </div>
+                    </div>
                 </a>
 
-                <a href="#" class="project-card" data-modal="sram-modal">
-                    <div class="project-image">
-                        <img src="project_files/sram.png" alt="SRAM Design">
+                <a href="#" class="project-row" data-modal="sram-modal">
+                    <div class="project-row-img">
+                        <img src="images/sram.png" alt="4-bit SRAM">
                     </div>
-                    <h3 class="project-title">4-bit SRAM Custom IC</h3>
-                    <p class="project-desc">Designed at transistor-level</p>
+                    <div class="project-row-body">
+                        <div class="project-row-top">
+                            <h3 class="project-row-title">4-bit SRAM Custom IC</h3>
+                            <span class="project-row-arrow">↗</span>
+                        </div>
+                        <p class="project-row-summary">Full-custom transistor-level SRAM cell designed and laid out in Cadence Virtuoso. Characterized read/write/access timing with HSPICE and Spectre simulations; validated with DRC and LVS.</p>
+                        <div class="project-row-tags">
+                            <span>VLSI</span><span>Cadence Virtuoso</span><span>HSPICE</span><span>Spectre</span>
+                        </div>
+                    </div>
                 </a>
 
-                <a href="#" class="project-card" data-modal="lc3b-modal">
-                    <div class="project-image">
-                        <img src="project_files/lc3_sim.png" alt="LC-3b Simulator">
+                <a href="#" class="project-row" data-modal="lc3b-modal">
+                    <div class="project-row-img">
+                        <img src="images/lc3_sim.png" alt="LC-3b Simulator">
                     </div>
-                    <h3 class="project-title">LC-3b Simulator</h3>
-                    <p class="project-desc">Pipelined microarchitecture</p>
+                    <div class="project-row-body">
+                        <div class="project-row-top">
+                            <h3 class="project-row-title">LC-3b Microarchitecture Simulator</h3>
+                            <span class="project-row-arrow">↗</span>
+                        </div>
+                        <p class="project-row-summary">Pipelined cycle-accurate simulator for the LC-3b ISA in C, with microcode, exception handling, and virtual memory via a one-level page table with full address translation.</p>
+                        <div class="project-row-tags">
+                            <span>Computer Architecture</span><span>C</span><span>LC-3b Assembly</span>
+                        </div>
+                    </div>
                 </a>
 
-                <a href="#" class="project-card" data-modal="oreoft-modal">
-                    <div class="project-image">
-                        <img src="project_files/oreoft_breakdown.png" alt="OreoFT Sensor">
+                <a href="#" class="project-row" data-modal="oreoft-modal">
+                    <div class="project-row-img">
+                        <img src="images/oreoft_breakdown.png" alt="OreoFT Sensor">
                     </div>
-                    <h3 class="project-title">OreoFT Capacitive Sensor</h3>
-                    <p class="project-desc">6-axis force/torque sensor</p>
+                    <div class="project-row-body">
+                        <div class="project-row-top">
+                            <h3 class="project-row-title">OreoFT — Capacitive 6-Axis Force/Torque Sensor</h3>
+                            <span class="project-row-arrow">↗</span>
+                        </div>
+                        <p class="project-row-summary">Low-cost ($17.72) capacitive FT sensor using stacked PCBs and 3D printing. PSoC + ESP32-S3 for 16-channel wireless acquisition; neural-network calibration across 16 design variants.</p>
+                        <div class="project-row-tags">
+                            <span>PCB Design</span><span>Capacitive Sensing</span><span>Python</span><span>C</span>
+                        </div>
+                    </div>
                 </a>
 
-                <a href="#" class="project-card" data-modal="space-modal">
-                    <div class="project-image">
-                        <img src="project_files/space_invaders.jpg" alt="Space Invaders">
-                    </div>
-                    <h3 class="project-title">Two-Player Space Invaders</h3>
-                    <p class="project-desc">Embedded game system</p>
-                </a>
-
-                <a href="#" class="project-card" data-modal="battlebots-modal">
-                    <div class="project-image">
-                        <img src="project_files/battlebots_cad.png" alt="Battlebots">
-                    </div>
-                    <h3 class="project-title">Full Body Spinner Robot</h3>
-                    <p class="project-desc">Battlebots League</p>
-                </a>
             </div>
         </section>
 
+        <!-- Experience -->
         <section class="section" id="experience">
-            <h2 class="section-title">Experience</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <h3 class="timeline-title">Incoming Digital IC Design Engineering Intern</h3>
-                    <div class="timeline-company">Texas Instruments</div>
-                    <div class="timeline-date">May 2026 - Aug 2026</div>
+            <div class="section-header">
+                <span class="section-label">Experience</span>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="exp-timeline">
+
+                <div class="exp-entry">
+                    <div class="exp-logo-col">
+                        <div class="exp-logo exp-logo--white">
+                            <img src="images/ti.png" alt="Texas Instruments" onerror="this.style.display='none';this.parentElement.innerHTML='<span>TI</span>'">
+                        </div>
+                        <div class="exp-vline"></div>
+                    </div>
+                    <div class="exp-body">
+                        <div class="exp-header-row">
+                            <div class="exp-company-name"><a href="https://www.ti.com" target="_blank" rel="noopener">Texas Instruments ↗</a></div>
+                            <div class="exp-location"><i class="fas fa-location-dot"></i> Dallas, Texas</div>
+                        </div>
+                        <div class="exp-role">Digital IC Design Engineering Intern</div>
+                        <div class="exp-date">May 2026 – August 2026</div>
+                    </div>
                 </div>
 
-                <div class="timeline-item">
-                    <h3 class="timeline-title">High-Voltage Test Engineering Intern</h3>
-                    <div class="timeline-company">Texas Instruments</div>
-                    <div class="timeline-date">May 2025 - Aug 2025</div>
-                    <p class="timeline-desc">Developed a C++ diagnostic program for the handler interface board of an
-                        isolated DC/DC module on ETS-364 ATE. Characterized restart behavior and body diode of isolated
-                        DC/DC modules across temperature for product qualification. Executed high-voltage tests on
-                        half-bridge driver lead frames, analyzing leakage current and arcing behavior. Automated
-                        repetitive tasks with Python scripts, improving accuracy and workflow efficiency.</p>
+                <div class="exp-entry">
+                    <div class="exp-logo-col">
+                        <div class="exp-logo exp-logo--white">
+                            <img src="images/ti.png" alt="Texas Instruments" onerror="this.style.display='none';this.parentElement.innerHTML='<span>TI</span>'">
+                        </div>
+                        <div class="exp-vline"></div>
+                    </div>
+                    <div class="exp-body">
+                        <div class="exp-header-row">
+                            <div class="exp-company-name"><a href="https://www.ti.com" target="_blank" rel="noopener">Texas Instruments ↗</a></div>
+                            <div class="exp-location"><i class="fas fa-location-dot"></i> Dallas, Texas</div>
+                        </div>
+                        <div class="exp-role">High-Voltage Test Engineering Intern</div>
+                        <div class="exp-date">May 2025 – August 2025</div>
+                        <p class="exp-desc">Developed a C++ diagnostic program for the handler interface board of an isolated DC/DC module on ETS-364 ATE. Characterized restart behavior and body diode of isolated DC/DC modules across temperature for product qualification. Executed high-voltage tests on half-bridge driver lead frames, analyzing leakage current and arcing behavior.</p>
+                    </div>
                 </div>
 
-                <div class="timeline-item">
-                    <h3 class="timeline-title">GPU System Validation Intern</h3>
-                    <div class="timeline-company">AMD</div>
-                    <div class="timeline-date">May 2024 - Aug 2024</div>
-                    <p class="timeline-desc">Executed system-level tests in Java on V93K ATE for Radeon GPUs for
-                        production and characterization flows. Characterized performance by generating Schmoo plots
-                        across voltage, frequency, and temperature corners. Examined GPU IP blocks including PCIe,
-                        VCE/VCN, and memory controller to support silicon debug and validation. Automated test flows and
-                        release notes generation using Python, Bash, and Gradle, reducing manual workload.</p>
+                <div class="exp-entry">
+                    <div class="exp-logo-col">
+                        <div class="exp-logo exp-logo--white">
+                            <img src="images/amd.jpg" alt="AMD" onerror="this.style.display='none';this.parentElement.innerHTML='<span>AMD</span>'">
+                        </div>
+                        <div class="exp-vline"></div>
+                    </div>
+                    <div class="exp-body">
+                        <div class="exp-header-row">
+                            <div class="exp-company-name"><a href="https://www.amd.com" target="_blank" rel="noopener">AMD ↗</a></div>
+                            <div class="exp-location"><i class="fas fa-location-dot"></i> Austin, Texas</div>
+                        </div>
+                        <div class="exp-role">GPU System Level Test Engineering Intern</div>
+                        <div class="exp-date">May 2024 – August 2024</div>
+                        <p class="exp-desc">Executed system-level tests in Java on V93K ATE for Radeon GPUs for production and characterization flows. Characterized performance by generating Schmoo plots across voltage, frequency, and temperature corners. Examined GPU IP blocks including PCIe, VCE/VCN, and memory controller to support silicon debug and validation. </p>
+                    </div>
                 </div>
 
-                <div class="timeline-item">
-                    <h3 class="timeline-title">Undergraduate Research Assistant</h3>
-                    <div class="timeline-company">ReNeu Robotics Lab</div>
-                    <div class="timeline-date">Sep 2023 - Aug 2024</div>
-                    <p class="timeline-desc">Developed and optimized real-time embedded C++ software for EMG signal
-                        acquisition in an EMG-driven robotic hand exoskeleton designed to assist individuals with spinal
-                        cord injuries. Implemented EtherCAT communication using ESI and SOEM to improve data acquisition
-                        reliability and timing. Created wiring diagrams and technical documentation</p>
+                <div class="exp-entry">
+                    <div class="exp-logo-col">
+                        <div class="exp-logo exp-logo--orange">
+                            <img src="images/ut_robotics.jpg" alt="Texas Robotics" onerror="this.style.display='none';this.parentElement.innerHTML='<span>UT</span>'">
+                        </div>
+                        <div class="exp-vline exp-vline--last"></div>
+                    </div>
+                    <div class="exp-body">
+                        <div class="exp-header-row">
+                            <div class="exp-company-name"><a href="https://reneu.robotics.utexas.edu/" target="_blank" rel="noopener">ReNeu Robotics Lab ↗</a></div>
+                            <div class="exp-location"><i class="fas fa-location-dot"></i> Austin, Texas</div>
+                        </div>
+                        <div class="exp-role">Undergraduate Research Assistant</div>
+                        <div class="exp-date">September 2023 – August 2024</div>
+                        <p class="exp-desc">Implemented EtherCAT communication for an EMG-driven robotic hand exoskeleton designed to assist individuals with spinal cord injuries, improving real-time signal acquisition reliability and timing. Created wiring diagrams and technical documentation to support the development of a second-generation system.</p>
+                    </div>
                 </div>
+
             </div>
         </section>
 
+        <!-- Coursework -->
         <section class="section" id="coursework">
-            <h2 class="section-title">Coursework</h2>
+            <div class="section-header">
+                <span class="section-label">Coursework</span>
+                <div class="section-line"></div>
+            </div>
             <div class="coursework-grid">
                 <div class="course-category">
                     <h3>Graduate ECE</h3>
                     <ul class="course-list">
-                        <li>CMOS VLSI Design</li>
+                        <li>CMOS VLSI</li>
                         <li>Tactile Sensing for Robotics</li>
                     </ul>
                 </div>
@@ -192,37 +296,26 @@
                 </div>
             </div>
         </section>
-    </div>
 
-    <!-- modals -->
+    </main>
+
+    <!-- ─── MODALS ─── -->
+
     <div id="wishbone-modal" class="modal">
         <div class="modal-content">
             <span class="close-button">&times;</span>
-            <div class="modal-banner" style="background-image: url('project_files/ssp.png');"></div>
+            <div class="modal-banner" style="background-image: url('images/ssp.png');"></div>
             <div class="modal-body">
                 <h2>SoC SSP and WISHBONE Bus Controller</h2>
-                <p>Designed a complete System-on-Chip featuring an 8-bit synchronous serial port (SSP) with WISHBONE bus
-                    interface for ARM-2 microprocessor integration.</p>
+                <p>Designed a complete System-on-Chip using an 8-bit synchronous serial port (SSP) with WISHBONE bus interface for ARM-2 microprocessor integration.</p>
                 <ul>
-                    <li>Designed an 8-bit synchronous serial port (SSP) in Verilog and verified functionality using
-                        testbenches in Synopsys VCS</li>
-                    <li>Developed a 32-bit WISHBONE bus controller to interface SSP with memory and ARM-2 microprocessor
-                        modules</li>
-                    <li>Implemented a clock management unit to synchronize data flow across all modules and handle
-                        interrupts on SSP FIFO overflow</li>
-                    <li>Imported synthesized Verilog design into Synopsys Design Vision for area and timing
-                        optimizations</li>
-                    <li>Performed automatic place-and-route (APR) in Cadence Innovus using a 45nm PDK to generate the
-                        physical SoC layout</li>
+                    <li>Designed an 8-bit synchronous serial port (SSP) in Verilog and verified functionality using testbenches in Synopsys VCS</li>
+                    <li>Developed a 32-bit WISHBONE bus controller to interface SSP with memory and ARM-2 microprocessor modules</li>
+                    <li>Implemented a clock management unit to synchronize data flow across all modules and handle interrupts on SSP FIFO overflow</li>
+                    <li>Imported synthesized Verilog design into Synopsys Design Vision for area and timing optimizations</li>
+                    <li>Performed automatic place-and-route (APR) in Cadence Innovus using a 45nm PDK to generate the physical SoC layout</li>
                 </ul>
-                <div class="modal-tags">
-                    <span>VLSI</span>
-                    <span>Verilog</span>
-                    <span>Synopsys VCS</span>
-                    <span>Design Vision</span>
-                    <span>Cadence Innovus</span>
-                    <span>45nm PDK</span>
-                </div>
+                <div class="modal-tags"><span>VLSI</span><span>Verilog</span><span>Synopsys VCS</span><span>Design Vision</span><span>Cadence Innovus</span><span>45nm PDK</span></div>
             </div>
         </div>
     </div>
@@ -230,28 +323,18 @@
     <div id="fp16-modal" class="modal">
         <div class="modal-content">
             <span class="close-button">&times;</span>
-            <div class="modal-banner" style="background-image: url('project_files/f16_multpliers.png');"></div>
+            <div class="modal-banner" style="background-image: url('images/f16_multpliers.png');"></div>
             <div class="modal-body">
                 <h2>IEEE-754 FP16 Matrix Multipliers</h2>
-                <p>Designed and compared two 3x3 FP16 matrix multiplication architectures: an unfused combinational
-                    array versus a fused pipelined systolic array.</p>
+                <p>Designed and compared two 3×3 FP16 matrix multiplication architectures: an unfused combinational array versus a fused pipelined systolic array.</p>
                 <ul>
-                    <li>Implemented combinatorial design using discrete FP multipliers and adders, with systolic design
-                        using fused MAC units</li>
+                    <li>Implemented combinatorial design using discrete FP multipliers and adders, with systolic design using fused MAC units</li>
                     <li>Created comprehensive testbenches and verified functionality in Synopsys VCS</li>
                     <li>Synthesized design in Synopsys Design Vision for area, timing, and timing optimization</li>
-                    <li>Performed automatic place-and-route (APR) in Cadence Innovus using 45nm PDK to generate physical
-                        layout</li>
+                    <li>Performed automatic place-and-route (APR) in Cadence Innovus using 45nm PDK to generate physical layout</li>
                     <li>Compared area, power, and timing trade-offs between unfused and fused architectures</li>
                 </ul>
-                <div class="modal-tags">
-                    <span>VLSI</span>
-                    <span>Verilog</span>
-                    <span>Synopsys VCS</span>
-                    <span>Design Vision</span>
-                    <span>Cadence Innovus</span>
-                    <span>45nm PDK</span>
-                </div>
+                <div class="modal-tags"><span>VLSI</span><span>Verilog</span><span>Synopsys VCS</span><span>Design Vision</span><span>Cadence Innovus</span><span>45nm PDK</span></div>
             </div>
         </div>
     </div>
@@ -259,29 +342,18 @@
     <div id="alu-modal" class="modal">
         <div class="modal-content">
             <span class="close-button">&times;</span>
-            <div class="modal-banner" style="background-image: url('project_files/alu1.png');"></div>
+            <div class="modal-banner" style="background-image: url('images/alu1.png');"></div>
             <div class="modal-body">
                 <h2>16-bit ALU Custom IC Design</h2>
-                <p>Designed an ALU for a RISC microprocessor at the gate level, supporting arithmetic, logical,
-                    comparison, and shift operations.</p>
+                <p>Designed an ALU for a RISC microprocessor at the gate level, supporting arithmetic, logical, comparison, and shift operations.</p>
                 <ul>
-                    <li>Integrated a radix-2 Kogge-Stone adder to achieve logarithmic carry propagation and minimize
-                        critical-path delay</li>
+                    <li>Integrated a radix-2 Kogge-Stone adder to achieve logarithmic carry propagation and minimize critical-path delay</li>
                     <li>Implemented a barrel shifter for logical, arithmetic, and rotate shifts</li>
-                    <li>Constructed datapath and control logic using Cadence Virtuoso for schematic and layout design
-                    </li>
-                    <li>Verified functionality with NC Verilog and optimized critical path delay via fanout minimization
-                        and bubble pushing</li>
-                    <li>Executed Automatic Place and Route (APR) in Cadence Innovus and Static Timing Analysis (STA)
-                        Synopsys PrimeTime on the post-layout design</li>
+                    <li>Constructed datapath and control logic using Cadence Virtuoso for schematic and layout design</li>
+                    <li>Verified functionality with NC Verilog and optimized critical path delay via fanout minimization and bubble pushing</li>
+                    <li>Executed APR in Cadence Innovus and STA with Synopsys PrimeTime on the post-layout design</li>
                 </ul>
-                <div class="modal-tags">
-                    <span>VLSI</span>
-                    <span>Cadence Virtuoso</span>
-                    <span>NC Verilog</span>
-                    <span>HSPICE</span>
-                    <span>Synopsys PrimeTime</span>
-                </div>
+                <div class="modal-tags"><span>VLSI</span><span>Cadence Virtuoso</span><span>NC Verilog</span><span>HSPICE</span><span>Synopsys PrimeTime</span></div>
             </div>
         </div>
     </div>
@@ -289,28 +361,16 @@
     <div id="sram-modal" class="modal">
         <div class="modal-content">
             <span class="close-button">&times;</span>
-            <div class="modal-banner" style="background-image: url('project_files/sram.png');"></div>
+            <div class="modal-banner" style="background-image: url('images/sram.png');"></div>
             <div class="modal-body">
                 <h2>4-bit SRAM Custom IC</h2>
-                <div class="project-media-left">
-                    <img src="project_files/sram-1.png" alt="OreoFT System Architecture"
-                        style="max-width: 30%; height: auto;">
-                </div>
-                <p>Designed a full-custom 4-bit SRAM cell at the transistor level, focusing on area, read/write
-                    stability, and timing characterization.</p>
+                <p>Designed a full-custom 4-bit SRAM cell at the transistor level, focusing on area, read/write stability, and timing characterization.</p>
                 <ul>
                     <li>Created transistor-level schematic and layout in Cadence Virtuoso</li>
-                    <li>Characterized access, read, and write delays using HSPICE and Spectre simulations across varying
-                        input slews and output loads</li>
+                    <li>Characterized access, read, and write delays using HSPICE and Spectre simulations across varying input slews and output loads</li>
                     <li>Utilized DRC and LVS to validate physical layout accuracy and schematic consistency</li>
                 </ul>
-                
-                <div class="modal-tags">
-                    <span>VLSI</span>
-                    <span>Cadence Virtuoso</span>
-                    <span>HSPICE</span>
-                    <span>Spectre</span>
-                </div>
+                <div class="modal-tags"><span>VLSI</span><span>Cadence Virtuoso</span><span>HSPICE</span><span>Spectre</span></div>
             </div>
         </div>
     </div>
@@ -318,26 +378,17 @@
     <div id="lc3b-modal" class="modal">
         <div class="modal-content">
             <span class="close-button">&times;</span>
-            <div class="modal-banner" style="background-image: url('project_files/lc3_sim.png');"></div>
+            <div class="modal-banner" style="background-image: url('images/lc3_sim.png');"></div>
             <div class="modal-body">
                 <h2>LC-3b Microarchitecture Simulator</h2>
-                <p>Developed a pipelined cycle simulator for the LC-3b microarchitecture, implementing datapath digital
-                    logic, instruction execution, and exception handling in C and LC-3b assembly.</p>
+                <p>Developed a pipelined cycle simulator for the LC-3b microarchitecture, implementing datapath digital logic, instruction execution, and exception handling in C and LC-3b assembly.</p>
                 <ul>
-                    <li>Created microcode and designed a state-cycle simulator to model microsequencer-driven
-                        instruction execution</li>
-                    <li>Implemented arithmetic and logic operations, branching, and trap routines according to the LC-3b
-                        ISA</li>
+                    <li>Created microcode and designed a state-cycle simulator to model microsequencer-driven instruction execution</li>
+                    <li>Implemented arithmetic and logic operations, branching, and trap routines according to the LC-3b ISA</li>
                     <li>Added support for unaligned access, protection, page fault, and unknown opcode exceptions</li>
-                    <li>Extended the datapath to support virtual memory using a one-level page table with address
-                        translation and fault detection</li>
+                    <li>Extended the datapath to support virtual memory using a one-level page table with address translation and fault detection</li>
                 </ul>
-                <div class="modal-tags">
-                    <span>C</span>
-                    <span>LC-3b Assembly</span>
-                    <span>Microarchitecture</span>
-                    <span>Virtual Memory</span>
-                </div>
+                <div class="modal-tags"><span>Computer Architecture</span><span>C</span><span>LC-3b Assembly</span><span>Virtual Memory</span></div>
             </div>
         </div>
     </div>
@@ -345,202 +396,94 @@
     <div id="oreoft-modal" class="modal">
         <div class="modal-content">
             <span class="close-button">&times;</span>
-            <div class="modal-banner" style="background-image: url('project_files/oreoft_breakdown.png');"></div>
+            <div class="modal-banner" style="background-image: url('images/oreoft_breakdown.png');"></div>
             <div class="modal-body">
                 <h2>OreoFT: Capacitive 6-Axis Force/Torque Sensor</h2>
-
-                <p>
-                    OreoFT is a low-cost, maker-accessible capacitive 6-axis force/torque sensor for robotics,
-                    education, and research. At $17.72 per unit, it uses only standard PCB fabrication and
-                    3D printing, providing an affordable alternative to commercial FT sensors, which are expensive,
-                    bulky, and fragile.
-                </p>
-                <p>
-                    OreoFT uses a stacked circular PCB with interlocked comb electrodes to measure normal and
-                    shear forces across all 6 degrees of freedom. Dual sensing modes are enabled through
-                    programmable grounding and shielding patterns.
-                </p>
-                <p>
-                    A PSoC 4100 MCU with CAPSENSE acquires 16-channel capacitance data at 16-bit resolution.
-                    An ESP32-S3 provides low-latency wireless communication via ESP-NOW, with calibration
-                    and real-time visualization done on a host PC using Python.
-                </p>
-                <p>
-                    Sixteen sensor variants were evaluated across dielectric materials, trace widths, spacings,
-                    and diameters. The sensor withstands loads exceeding 400 N, with neural network calibration
-                    models achieving the best performance.
-                </p>
-
+                <p>OreoFT is a low-cost, maker-accessible capacitive 6-axis force/torque sensor for robotics, education, and research. At $17.72 per unit, it uses only standard PCB fabrication and 3D printing, providing an affordable alternative to commercial FT sensors.</p>
+                <p>OreoFT uses a stacked circular PCB with interlocked comb electrodes to measure normal and shear forces across all 6 degrees of freedom. Dual sensing modes are enabled through programmable grounding and shielding patterns.</p>
+                <p>A PSoC 4100 MCU with CAPSENSE acquires 16-channel capacitance data at 16-bit resolution. An ESP32-S3 provides low-latency wireless communication via ESP-NOW, with calibration and real-time visualization done on a host PC using Python.</p>
+                <p>Sixteen sensor variants were evaluated across dielectric materials, trace widths, spacings, and diameters. The sensor withstands loads exceeding 400 N, with neural network calibration models achieving the best performance.</p>
                 <div class="project-media-dual">
-                    <img src="project_files/oreoft_breakdown.png" alt="OreoFT System Architecture">
-                    <img src="project_files/oreoft_architecture.jpg" alt="OreoFT System Architecture">
+                    <img src="images/oreoft_breakdown.png" alt="OreoFT System Architecture">
+                    <img src="images/oreoft_architecture.jpg" alt="OreoFT Architecture">
                 </div>
-
                 <h3>Printed Circuit Board</h3>
-
                 <div class="project-media-dual">
-                    <img src="project_files/oreoft_pcb.png" alt="OreoFT Electronics">
-                    <img src="project_files/oreoft_pcb_traces.png" alt="OreoFT Testing">
+                    <img src="images/oreoft_pcb.png" alt="OreoFT PCB">
+                    <img src="images/oreoft_pcb_traces.png" alt="OreoFT PCB Traces">
                 </div>
-
-                <div class="modal-tags">
-                    <span>Capacitive Sensing</span>
-                    <span>Robotics</span>
-                    <span>PCB Design</span>
-                    <span>Python</span>
-                    <span>C</span>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div id="space-modal" class="modal">
-        <div class="modal-content">
-            <span class="close-button">&times;</span>
-            <div class="modal-banner" style="background-image: url('project_files/space_invaders.jpg');"></div>
-            <div class="modal-body">
-                <h2>Two-Player Space Invaders</h2>
-                <p>Developed a two-player Space Invaders game on a TM4C microcontroller using C++ and ARM assembly.</p>
-                <ul>
-                    <li>Designed a custom game board PCB with analog joysticks, LEDs, switches, and an ST7735 LCD using
-                        EAGLE</li>
-                    <li>Implemented sound effects via interrupts and DAC output</li>
-                </ul>
-                <div class="modal-tags">
-                    <span>C++</span>
-                    <span>ARM Assembly</span>
-                    <span>PCB Design</span>
-                    <span>Embedded Systems</span>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div id="battlebots-modal" class="modal">
-        <div class="modal-content">
-            <span class="close-button">&times;</span>
-            <div class="modal-banner" style="background-image: url('project_files/battlebots_cad.png');"></div>
-            <div class="modal-body">
-                <h2>UT Austin Battlebots League</h2>
-
-                <div class="text-content">
-                    <p>Developed a full-body spinner robot for combat competition</p>
-                    <ul>
-                        <li>Designed the robot's electrical system using C and an Arduino Uno Rev3 microcontroller
-                        </li>
-                        <li>Integrated ESC, RC controller, power supply, motors, and remote kill switch</li>
-                        <li>Conducted testing to ensure reliability and performance in competitive matches</li>
-                    </ul>
-                </div>
-
-                <div class="project-media-dual">
-                    <img src="project_files/battlebots_cad.png" alt="OreoFT Electronics">
-                    <img src="project_files/battlebots_bot.jpg" alt="OreoFT Testing">
-                </div>
-
-                <div class="modal-tags">
-                    <span>C</span>
-                    <span>Robotics</span>
-                    <span>Microcontroller</span>
-                </div>
+                <div class="modal-tags"><span>Capacitive Sensing</span><span>Robotics</span><span>PCB Design</span><span>Python</span><span>C</span></div>
             </div>
         </div>
     </div>
 
     <script>
         document.addEventListener('DOMContentLoaded', function () {
-            const cards = document.querySelectorAll('.project-card');
-            const modals = document.querySelectorAll('.modal');
             const themeToggle = document.querySelector('.theme-toggle');
             const themeIcon = themeToggle.querySelector('i');
+            const modals = document.querySelectorAll('.modal');
 
-            const currentTheme = localStorage.getItem('theme') || 'dark';
-            if (currentTheme === 'dark') {
-                document.body.classList.add('dark-mode');
-                themeIcon.classList.remove('fa-moon');
-                themeIcon.classList.add('fa-sun');
+            // Theme
+            const saved = localStorage.getItem('theme') || 'dark';
+            if (saved === 'light') {
+                document.body.classList.add('light-mode');
+                themeIcon.classList.replace('fa-sun', 'fa-moon');
             }
-
-            // toggle theme
-            themeToggle.addEventListener('click', function () {
-                document.body.classList.toggle('dark-mode');
-
-                if (document.body.classList.contains('dark-mode')) {
-                    themeIcon.classList.remove('fa-moon');
-                    themeIcon.classList.add('fa-sun');
-                    localStorage.setItem('theme', 'dark');
-                } else {
-                    themeIcon.classList.remove('fa-sun');
-                    themeIcon.classList.add('fa-moon');
-                    localStorage.setItem('theme', 'light');
-                }
+            themeToggle.addEventListener('click', () => {
+                document.body.classList.toggle('light-mode');
+                const isLight = document.body.classList.contains('light-mode');
+                themeIcon.classList.replace(isLight ? 'fa-sun' : 'fa-moon', isLight ? 'fa-moon' : 'fa-sun');
+                localStorage.setItem('theme', isLight ? 'light' : 'dark');
             });
 
-            cards.forEach(card => {
-                card.addEventListener('click', function (e) {
+            // Open modals
+            document.querySelectorAll('[data-modal]').forEach(el => {
+                el.addEventListener('click', e => {
                     e.preventDefault();
-                    e.stopPropagation();
-                    const modalId = this.getAttribute('data-modal');
-                    const modal = document.getElementById(modalId);
-                    if (modal) {
-                        modal.style.display = 'block';
-                        document.body.style.overflow = 'hidden'; // Prevent background scrolling
-                    }
+                    const m = document.getElementById(el.getAttribute('data-modal'));
+                    if (m) { m.style.display = 'block'; document.body.style.overflow = 'hidden'; }
                 });
             });
 
-            // modal functionality
+            // Close modals
             modals.forEach(modal => {
-                const closeBtn = modal.querySelector('.close-button');
-
-                if (closeBtn) {
-                    closeBtn.addEventListener('click', function (e) {
-                        e.stopPropagation();
-                        modal.style.display = 'none';
-                        document.body.style.overflow = 'auto';
-                    });
-                }
-
-                modal.addEventListener('click', function (e) {
-                    if (e.target === modal) {
-                        modal.style.display = 'none';
-                        document.body.style.overflow = 'auto';
-                    }
+                modal.querySelector('.close-button')?.addEventListener('click', e => {
+                    e.stopPropagation();
+                    modal.style.display = 'none';
+                    document.body.style.overflow = '';
+                });
+                modal.addEventListener('click', e => {
+                    if (e.target === modal) { modal.style.display = 'none'; document.body.style.overflow = ''; }
                 });
             });
-
-            document.addEventListener('keydown', function (e) {
-                if (e.key === 'Escape') {
-                    modals.forEach(modal => {
-                        if (modal.style.display === 'block') {
-                            modal.style.display = 'none';
-                            document.body.style.overflow = 'auto';
-                        }
-                    });
-                }
+            document.addEventListener('keydown', e => {
+                if (e.key === 'Escape') modals.forEach(m => { m.style.display = 'none'; document.body.style.overflow = ''; });
             });
 
-            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-                anchor.addEventListener('click', function (e) {
-                    const href = this.getAttribute('href');
-                    if (href !== '#' && !this.classList.contains('project-card')) {
+            // Smooth scroll with offset for fixed header
+            document.querySelectorAll('a[href^="#"]').forEach(a => {
+                a.addEventListener('click', e => {
+                    const href = a.getAttribute('href');
+                    if (href === '#') return;
+                    const target = document.querySelector(href);
+                    if (target) {
                         e.preventDefault();
-                        const target = document.querySelector(href);
-                        if (target) {
-                            const headerOffset = 80;
-                            const elementPosition = target.getBoundingClientRect().top;
-                            const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-
-                            window.scrollTo({
-                                top: offsetPosition,
-                                behavior: 'smooth'
-                            });
-                        }
+                        const top = target.getBoundingClientRect().top + window.pageYOffset - 72;
+                        window.scrollTo({ top, behavior: 'smooth' });
                     }
                 });
             });
+
+            // Active nav
+            const navItems = document.querySelectorAll('.nav-item');
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting)
+                        navItems.forEach(i => i.classList.toggle('active', i.getAttribute('href') === '#' + entry.target.id));
+                });
+            }, { rootMargin: '-20% 0px -70% 0px' });
+            document.querySelectorAll('section[id]').forEach(s => observer.observe(s));
         });
     </script>
 </body>
-
 </html>
